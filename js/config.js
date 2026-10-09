@@ -13,16 +13,15 @@ const clinicConfig = {
   tagline: "Estética · Beleza · Bem-estar",
 
   // ── CONTATO ──────────────────────────────────────────────
-  // TODO: Substitua pelo número real no formato: 55 + DDD + número (sem espaços)
-  whatsapp: "5511999999999",
-  phone: "(11) 99999-9999",
+  whatsapp: "5511989603385",
+  phone: "(11) 98960-3385",
   email: "contato@belleskin.com.br",
 
   // ── ENDEREÇO ─────────────────────────────────────────────
-  address: "Rua das Flores, 320 — Jardins",
+  address: "Rua Conde das Galveias, 27",
   city: "São Paulo",
   state: "SP",
-  cep: "01427-000",
+  cep: "04125-000",
 
   // ── REDES SOCIAIS ─────────────────────────────────────────
   // TODO: Substitua pelos links reais

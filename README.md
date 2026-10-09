@@ -124,13 +124,13 @@ Para alterar o telefone, WhatsApp ou endereço da clínica, edite o arquivo [`js
 const clinicConfig = {
   name: "Belle Skin & Wellness",
   tagline: "Estética · Beleza · Bem-estar",
-  whatsapp: "5511999999999", // Formato: 55 + DDD + Número (sem caracteres especiais)
-  phone: "(11) 99999-9999",
+  whatsapp: "5511989603385", // Formato: 55 + DDD + Número (sem caracteres especiais)
+  phone: "(11) 98960-3385",
   email: "contato@belleskin.com.br",
-  address: "Rua das Flores, 320 — Jardins",
+  address: "Rua Conde das Galveias, 27",
   city: "São Paulo",
   state: "SP",
-  cep: "01427-000",
+  cep: "04125-000",
   instagram: "https://instagram.com/belleskin",
   facebook: "https://facebook.com/belleskin",
   openingHours: {
