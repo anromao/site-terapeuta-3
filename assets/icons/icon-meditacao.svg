@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <!-- Anéis Orbitais Cósmicos -->
+  <ellipse cx="24" cy="24" rx="21" ry="8" stroke="url(#med-ring)" stroke-width="1.2" transform="rotate(-20 24 24)"/>
+  <ellipse cx="24" cy="24" rx="21" ry="8" stroke="url(#med-ring)" stroke-width="1.2" transform="rotate(20 24 24)"/>
+  <!-- Cabeça e Terceiro Olho -->
+  <circle cx="24" cy="14" r="4.5" fill="url(#med-body)"/>
+  <circle cx="24" cy="14" r="1.5" fill="#FFFFFF"/>
+  <!-- Corpo em Postura de Lótus -->
+  <path d="M24 19C20.5 19 17 22 16 26L13 32C12.5 33 13.5 34 15 34H33C34.5 34 35.5 33 35 32L32 26C31 22 27.5 19 24 19Z" fill="url(#med-body)" fill-opacity="0.85"/>
+  <!-- Pés cruzados e base estável -->
+  <path d="M12 34C16 37 32 37 36 34" stroke="#FF7597" stroke-width="2" stroke-linecap="round"/>
+  <!-- Chakra Coronário estelar -->
+  <circle cx="24" cy="6" r="1.5" fill="#FF7597"/>
+  <path d="M24 3V5M22 4L26 4" stroke="#FF7597" stroke-width="1" stroke-linecap="round"/>
+  <defs>
+    <linearGradient id="med-ring" x1="3" y1="16" x2="45" y2="32" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D12845" stop-opacity="0.8"/>
+      <stop offset="0.5" stop-color="#A83279" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#8E24AA" stop-opacity="0.8"/>
+    </linearGradient>
+    <linearGradient id="med-body" x1="16" y1="9.5" x2="32" y2="34" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF7597"/>
+      <stop offset="0.5" stop-color="#A83279"/>
+      <stop offset="1" stop-color="#D12845"/>
+    </linearGradient>
+  </defs>
+</svg>

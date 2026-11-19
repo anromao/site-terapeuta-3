@@ -1,9 +1,8 @@
-
-# PROMPT — DESENVOLVIMENTO DE SITE MULTI-PAGES PARA CLÍNICA DE ESTÉTICA E BELEZA
+# PROMPT — DESENVOLVIMENTO DE SITE MULTI-PAGES PARA TERAPEUTA HOLÍSTICA
 
 ## 1. PAPEL
 
-Atue como um **Engenheiro Frontend Sênior, UI/UX Designer e Especialista em desenvolvimento de websites comerciais de alta conversão**, com experiência em:
+Atue como um **Engenheiro Frontend Sênior, UI/UX Designer e Especialista em desenvolvimento de websites institucionais e comerciais de alta conversão**, com experiência em:
 
 - HTML5 semântico
 - CSS3
@@ -15,40 +14,48 @@ Atue como um **Engenheiro Frontend Sênior, UI/UX Designer e Especialista em des
 - SEO técnico
 - Performance
 - Animações e microinterações
-- E-commerce frontend
-- Carrinho de compras
+- Catálogo de atendimentos
+- Formulários de solicitação e agendamento
 - Modais e drawers
 - Integração com WhatsApp
 - Landing pages e sites institucionais
 - Arquitetura frontend modular
 
-Sua missão é **projetar e desenvolver um website completo, moderno, sofisticado, responsivo e orientado à conversão para uma Clínica de Estética e Beleza**.
+Sua missão é **projetar e desenvolver um website completo, moderno, sofisticado, responsivo e orientado à conversão para uma terapeuta holística**, com foco em apresentar sua trajetória, explicar suas abordagens e facilitar o contato e o agendamento de sessões.
+
+Não trate o projeto como clínica de estética, e-commerce ou plataforma de venda de procedimentos. A experiência deve ser institucional, acolhedora e voltada ao relacionamento entre a terapeuta e as pessoas interessadas nos atendimentos.
 
 ---
 
-# 2. OBJETIVO DO PROJETO
+## 2. OBJETIVO DO PROJETO
 
-Criar um website **MULTI-PAGES** para uma clínica de estética e beleza.
+Criar um website **MULTI-PAGES** para uma TERAPEUTA HOLÍSTICA.
+
+Nome de referência do projeto: **Aureci Sena**.
 
 O site deverá transmitir:
 
-- Elegância
-- Sofisticação
-- Beleza
-- Cuidado
-- Confiança
-- Tecnologia
+- Acolhimento
+- Equilíbrio
 - Bem-estar
+- Autoconhecimento
+- Tranquilidade
+- Confiança
+- Sensibilidade
+- Espiritualidade, sem exageros visuais
 - Profissionalismo
-- Exclusividade
+- Cuidado individualizado
+- Renovação e qualidade de vida
 
-O projeto deve possuir uma estética visual premium, semelhante à experiência de marcas modernas de estética, dermatologia, beleza e wellness.
+O projeto deve possuir uma identidade visual premium, elegante e humana, adequada à apresentação de uma terapeuta holística e de suas práticas.
 
-O resultado final deve parecer um **site comercial real pronto para publicação**, e não um simples template.
+O resultado final deve parecer um **site profissional real, pronto para publicação**, e não um simples template.
+
+Não inventar história, formação, certificações, experiência, depoimentos, endereço, modalidades oferecidas ou resultados terapêuticos. Quando alguma informação não tiver sido fornecida, utilizar configuração editável ou ocultar a seção até que os dados reais sejam inseridos.
 
 ---
 
-# 3. TECNOLOGIAS OBRIGATÓRIAS
+## 3. TECNOLOGIAS OBRIGATÓRIAS
 
 Utilize exclusivamente tecnologias frontend.
 
@@ -62,8 +69,7 @@ Utilize exclusivamente tecnologias frontend.
 - JavaScript ES6+
 - SVG
 - APIs nativas do navegador
-- LocalStorage
-- Google Maps Embed ou alternativa equivalente
+- Google Maps Embed ou alternativa equivalente, somente quando houver endereço real
 - Bibliotecas frontend leves, quando realmente necessárias
 
 ### NÃO UTILIZAR
@@ -86,9 +92,11 @@ Utilize exclusivamente tecnologias frontend.
 
 O projeto deverá funcionar como um **website frontend estático**.
 
+Não criar dependência de backend para o formulário. O envio de solicitação deverá ser realizado por meio de integração com WhatsApp, sem simular confirmação automática de consulta.
+
 ---
 
-# 4. ARQUITETURA DO PROJETO
+## 4. ARQUITETURA DO PROJETO
 
 Estruture o projeto de forma profissional e organizada.
 
@@ -98,8 +106,7 @@ Sugestão:
 /
 ├── index.html
 ├── sobre.html
-├── servicos.html
-├── equipe.html
+├── atendimentos.html
 ├── contato.html
 │
 ├── assets/
@@ -114,60 +121,68 @@ Sugestão:
 │
 ├── js/
 │   ├── main.js
-│   ├── services.js
-│   ├── cart.js
-│   ├── checkout.js
+│   ├── therapies.js
+│   ├── appointment.js
 │   └── whatsapp.js
 │
 └── README.md
-````
+```
 
 Caso considere outra estrutura mais eficiente, poderá adotá-la, desde que mantenha o projeto simples, modular e fácil de manter.
 
+Não criar páginas desnecessárias. A página de atendimentos deverá funcionar como apresentação organizada das práticas efetivamente oferecidas pela terapeuta.
+
 ---
 
-# 5. IDENTIDADE VISUAL
+## 5. IDENTIDADE VISUAL
 
-Crie uma identidade visual sofisticada para a clínica.
+Crie uma identidade visual sofisticada para a terapeuta holística.
 
-A direção visual deverá utilizar:
+A direção visual deverá utilizar a paleta de cores definida para o projeto e, caso exista uma imagem de referência na pasta do projeto, utilizá-la como parâmetro principal para:
 
-* Cores claras
-* Tons suaves
-* Branco
-* Off-white
-* Nude
-* Bege
-* Rosé
-* Dourado suave
-* Tons naturais
-* Contraste elegante
+- Paleta de cores
+- Tons predominantes
+- Estilo dos ícones
+- Elementos gráficos
+- Linguagem visual
+- Contraste
+- Formas e ornamentos
+- Estilo fotográfico
 
-Evite excesso de cores.
+Não substituir a paleta de referência por uma identidade genérica.
 
-Não utilizar uma identidade visual predominantemente escura.
+A direção visual poderá trabalhar com:
+
+- Cores claras e naturais
+- Tons suaves
+- Off-white
+- Bege
+- Verde natural ou sálvia, se compatível com a referência
+- Rosé ou terracota suave, se compatível com a referência
+- Dourado discreto, se compatível com a referência
+- Contraste elegante
+
+Evite excesso de cores, brilhos, efeitos neon, símbolos esotéricos exagerados e aparência de clínica médica.
 
 A interface deve transmitir:
 
-> "Clínica premium, moderna, elegante e acolhedora."
+> Um espaço de acolhimento, equilíbrio, cuidado e autoconhecimento.
 
-Utilize bastante espaço em branco, tipografia refinada e imagens grandes.
+Utilize bastante espaço em branco, tipografia refinada, imagens grandes e composição visual serena.
 
 ---
 
-# 6. TIPOGRAFIA
+## 6. TIPOGRAFIA
 
-Escolha uma combinação de fontes elegante.
-
-Sugestão:
+Escolha uma combinação de fontes elegante e legível.
 
 ### Títulos
 
-Uma fonte serifada sofisticada.
+Uma fonte serifada sofisticada, com personalidade e leitura confortável.
 
 ### Textos
 
-Uma fonte sans-serif moderna e extremamente legível.
+Uma fonte sans-serif moderna, simples e extremamente legível.
 
 Exemplo conceitual:
 
@@ -179,46 +194,51 @@ Textos:
 Inter / Manrope / Montserrat
 ```
 
-A escolha final pode ser adaptada para manter melhor performance e coerência visual.
+A escolha final pode ser adaptada para manter melhor performance e coerência visual com a imagem de referência.
+
+Evitar fontes excessivamente ornamentadas em textos longos.
 
 ---
 
-# 7. IMAGENS
+## 7. IMAGENS
 
 O projeto deverá utilizar imagens de alta qualidade relacionadas a:
 
-* Estética
-* Beleza
-* Pele
-* Laser
-* Facial
-* Corpo
-* Wellness
-* Massagens
-* Clínica
-* Profissionais
-* Atendimento
-* Mulheres e homens em contexto de beleza e autocuidado
-* Ambientes sofisticados
+- Natureza
+- Bem-estar
+- Equilíbrio
+- Autoconhecimento
+- Serenidade
+- Renovação
+- Meditação
+- Respiração consciente
+- Elementos naturais
+- Plantas e flores
+- Luz natural
+- Ambientes acolhedores
+- Atendimento terapêutico humanizado
 
-## HERO
+Evitar imagens de procedimentos estéticos, equipamentos de estética, salas cirúrgicas, jalecos médicos, cosméticos, laser, Botox ou tratamentos dermatológicos.
+
+### HERO
 
 A Home deverá possuir uma seção HERO extremamente impactante.
 
-Utilize uma imagem de fundo em tela cheia.
+Utilize uma imagem de fundo em tela cheia ou uma composição editorial de destaque.
 
 A imagem deverá transmitir:
 
-* Beleza
-* Sofisticação
-* Confiança
-* Saúde
-* Bem-estar
-* Tecnologia estética
+- Acolhimento
+- Serenidade
+- Confiança
+- Equilíbrio
+- Natureza
+- Bem-estar
+- Transformação pessoal
 
 ### IMPORTANTE
 
-A imagem do Hero deverá ser **criada/gerada**, não simplesmente representada por um placeholder.
+A imagem do Hero deverá ser criada/gerada ou selecionada de forma coerente com a identidade visual, não simplesmente representada por um placeholder.
 
 Criar uma composição visual adequada para:
 
@@ -230,24 +250,26 @@ Mobile
 
 A imagem deverá possuir espaço visual suficiente para acomodar os textos e CTAs.
 
+Se houver fotografia real da terapeuta na pasta do projeto, priorizá-la na apresentação pessoal, sem alterar artificialmente sua aparência.
+
 ---
 
-# 8. NAVEGAÇÃO
+## 8. NAVEGAÇÃO
 
 Criar um Header profissional.
 
 Desktop:
 
 ```text
-LOGO
+LOGO / AURECI SENA
 
 Home
 Sobre
-Serviços
-Equipe
+Atendimentos
+Como funciona
 Contato
 
-[ Agendar Atendimento ]
+[ Agendar Sessão ]
 ```
 
 Mobile:
@@ -256,15 +278,17 @@ Utilizar menu hamburger.
 
 O Header deverá:
 
-* Ser sticky/fixed de forma elegante
-* Alterar seu comportamento durante o scroll
-* Possuir transição suave
-* Manter excelente legibilidade
-* Possuir CTA de agendamento
+- Ser sticky/fixed de forma elegante
+- Alterar seu comportamento durante o scroll
+- Possuir transição suave
+- Manter excelente legibilidade
+- Possuir CTA de agendamento
+- Destacar a página atual
+- Fechar o menu mobile após a seleção de um link
 
 ---
 
-# 9. PÁGINAS
+## 9. PÁGINAS
 
 O projeto deverá possuir as seguintes páginas:
 
@@ -272,16 +296,19 @@ O projeto deverá possuir as seguintes páginas:
 /
 ├── Home
 ├── Sobre
-├── Serviços
-├── Equipe
+├── Atendimentos
 └── Contato
 ```
 
+A navegação deverá ser simples e intuitiva.
+
+Não criar página de equipe com profissionais fictícios. A apresentação deverá ser centrada na terapeuta.
+
 ---
 
-# 10. HOME
+## 10. HOME
 
-A Home deverá ser uma página completa de conversão.
+A Home deverá ser uma página completa de apresentação e conversão para contato.
 
 Estrutura sugerida:
 
@@ -290,36 +317,34 @@ Header
 ↓
 Hero
 ↓
-Benefícios / diferenciais
+Mensagem de acolhimento
 ↓
-Categorias de serviços
+Benefícios / diferenciais da abordagem
 ↓
-Serviços em destaque
+Atendimentos em destaque
 ↓
-Sobre a clínica
+Sobre a terapeuta
 ↓
-Tecnologias / tratamentos
+Como funciona uma sessão
 ↓
-Equipe
-↓
-Depoimentos
-↓
-Marcas
+Depoimentos reais, se disponíveis
 ↓
 FAQ
 ↓
 CTA de agendamento
-↓
-Mapa
 ↓
 Informações de contato
 ↓
 Footer
 ```
 
+A página deverá conduzir o visitante de forma natural: conhecer a terapeuta, compreender as abordagens, esclarecer dúvidas e solicitar um atendimento.
+
+Não utilizar linguagem de venda agressiva.
+
 ---
 
-# 11. HERO DA HOME
+## 11. HERO DA HOME
 
 Criar uma seção hero full screen.
 
@@ -329,348 +354,432 @@ Elementos:
 
 Algo como:
 
-"BELEZA • CUIDADO • BEM-ESTAR"
+```text
+ACOLHIMENTO • EQUILÍBRIO • AUTOCONHECIMENTO
+```
 
 ### Headline
 
-Criar uma headline impactante, por exemplo:
+Criar uma headline acolhedora e impactante, por exemplo:
 
-> "Realce sua beleza. Cuide de você."
+> Um caminho de cuidado, equilíbrio e reconexão com você.
 
-ou outra opção mais sofisticada.
+Ou outra opção mais adequada à identidade visual e à comunicação da terapeuta.
 
 ### Texto
 
 Criar uma descrição curta destacando:
 
-* Atendimento personalizado
-* Tecnologia
-* Profissionais especializados
-* Protocolos personalizados
+- Atendimento individualizado
+- Escuta acolhedora
+- Práticas integrativas, quando efetivamente oferecidas
+- Jornada de autoconhecimento
+- Bem-estar e equilíbrio
+
+Não prometer cura, solução garantida ou resultados específicos.
 
 ### CTAs
 
 Botão principal:
 
 ```text
-Agendar Atendimento
+Agendar uma conversa
 ```
 
 Botão secundário:
 
 ```text
-Conhecer Tratamentos
+Conhecer os atendimentos
 ```
 
-Adicionar microanimações.
+Adicionar microanimações discretas.
 
 ---
 
-# 12. CATEGORIAS DE SERVIÇOS
+## 12. CATEGORIAS DE ATENDIMENTOS
 
-Criar uma seção apresentando as principais categorias.
+Criar uma seção apresentando as principais categorias de práticas que podem compor o trabalho de uma terapeuta holística.
 
-Categorias:
+As categorias abaixo são referências de modalidades encontradas no mercado e **não devem ser consideradas confirmação de que Aureci Sena oferece todas elas**.
 
-## LASER
+### EQUILÍBRIO ENERGÉTICO
 
-* Depilação a laser
-* Tratamentos de pele a laser
+Possíveis práticas, somente se confirmadas pela terapeuta:
 
-## FACIAL
+- Reiki
+- Imposição de mãos
+- Harmonização energética
 
-* Limpeza de pele
-* Peeling
-* Microagulhamento
-* Rejuvenescimento
+### TERAPIAS NATURAIS E SENSORIAIS
 
-## CORPORAL
+Possíveis práticas:
 
-* Drenagem
-* Gordura localizada
-* Celulite
-* Flacidez
+- Aromaterapia
+- Terapia floral
+- Florais de Bach
+- Cromoterapia
 
-## HARMONIZAÇÃO
+### RELAXAMENTO E CONSCIÊNCIA CORPORAL
 
-* Botox
-* Preenchimentos
-* Bioestimuladores
+Possíveis práticas:
 
-## BEM-ESTAR
+- Reflexologia
+- Massagem relaxante
+- Práticas de respiração consciente
+- Meditação guiada
 
-* Massagens
-* Drenagem
-* Protocolos relaxantes
+### AUTOCONHECIMENTO E DESENVOLVIMENTO PESSOAL
+
+Possíveis práticas:
+
+- Constelação familiar
+- Arteterapia
+- Bioenergética
+- Mindfulness
+
+### BEM-ESTAR E INTEGRAÇÃO
+
+Possíveis práticas:
+
+- Relaxamento guiado
+- Práticas contemplativas
+- Exercícios de atenção plena
+
+Não publicar modalidade sem confirmação da terapeuta e sem verificar sua formação ou qualificação para oferecê-la.
 
 Criar cards visualmente sofisticados.
 
 Cada categoria deve possuir:
 
-* Imagem
-* Nome
-* Pequena descrição
-* CTA
+- Imagem
+- Nome
+- Pequena descrição
+- Lista de práticas confirmadas
+- CTA
 
 CTA:
 
 ```text
-Ver tratamentos
+Conhecer abordagem
 ```
+
+Não apresentar essas categorias como especialidades certificadas sem documentação ou informação fornecida.
 
 ---
 
-# 13. PÁGINA DE SERVIÇOS
+## 13. PÁGINA DE ATENDIMENTOS
 
 Esta é uma das partes MAIS IMPORTANTES do projeto.
 
 A página:
 
 ```text
-servicos.html
+atendimentos.html
 ```
 
-deverá funcionar como um **CATÁLOGO DE SERVIÇOS COM CARRINHO**.
+deverá funcionar como um **CATÁLOGO INFORMATIVO DE ATENDIMENTOS TERAPÊUTICOS**.
+
+O objetivo é permitir que o visitante conheça as práticas, entenda a proposta de cada atendimento e solicite informações ou agendamento.
+
+Não utilizar estrutura de loja virtual.
+
+Não criar carrinho de compras, checkout comercial, pagamento fictício ou linguagem de compra de procedimentos.
 
 ---
 
-# 14. CATÁLOGO DE SERVIÇOS
+## 14. CATÁLOGO DE ATENDIMENTOS
 
-Cada serviço deverá ser apresentado em um card.
+Cada atendimento confirmado deverá ser apresentado em um card.
 
 Cada card deverá possuir:
 
 ```text
 Imagem
 Categoria
-Nome do serviço
+Nome do atendimento
 Descrição curta
-Preço
-Botão "Adicionar ao carrinho"
+Objetivo ou proposta da prática
+Duração, se informada
+Modalidade presencial/online, se informada
+Valor, somente se fornecido
+Botão "Saiba mais"
+Botão "Agendar atendimento"
 ```
 
-Exemplo:
+Exemplo visual:
 
 ```text
 ┌──────────────────────────────┐
 │                              │
-│          IMAGEM              │
+│            IMAGEM            │
 │                              │
 ├──────────────────────────────┤
-│ FACIAL                       │
+│ EQUILÍBRIO ENERGÉTICO        │
 │                              │
-│ Limpeza de Pele Premium      │
+│ Nome do atendimento          │
 │                              │
-│ Protocolo completo de...     │
+│ Breve descrição da prática,  │
+│ com linguagem clara e        │
+│ responsável.                 │
 │                              │
-│ R$ 189,00                    │
+│ Duração: se informada        │
 │                              │
-│ [ Adicionar ao carrinho ]    │
+│ [ Saiba mais ]               │
+│ [ Agendar atendimento ]      │
 └──────────────────────────────┘
 ```
 
+Não inventar duração, preço, contraindicações, resultados ou características específicas.
+
+Quando o valor não tiver sido informado, não exibir preço fictício. Utilizar:
+
+```text
+Consulte informações
+```
+
+ou simplesmente omitir o campo.
+
 ---
 
-# 15. FILTROS
+## 15. FILTROS
 
-Adicionar filtros para facilitar a navegação.
+Adicionar filtros para facilitar a navegação, caso a quantidade de atendimentos justifique.
 
-Filtros:
+Filtros sugeridos:
 
 ```text
 Todos
-Laser
-Facial
-Corporal
-Harmonização
+Equilíbrio energético
+Terapias naturais
+Relaxamento
+Autoconhecimento
 Bem-estar
 ```
 
 Adicionar também:
 
-* Busca por nome
-* Ordenação por preço
-* Ordenação alfabética
+- Busca por nome
+- Busca por palavra-chave
+- Ordenação alfabética
 
 Tudo deverá funcionar utilizando JavaScript.
 
+Não adicionar ordenação por preço quando os preços não estiverem disponíveis.
+
 ---
 
-# 16. DADOS DOS SERVIÇOS
+## 16. DADOS DOS ATENDIMENTOS
 
-Não hardcode os serviços diretamente em dezenas de elementos HTML.
+Não hardcode os atendimentos diretamente em dezenas de elementos HTML.
 
 Criar uma estrutura JavaScript organizada.
 
 Exemplo conceitual:
 
 ```javascript
-const services = [
+const therapies = [
     {
         id: 1,
-        category: "facial",
-        name: "Limpeza de Pele",
-        description: "Protocolo completo para revitalização da pele.",
-        price: 189.90,
-        image: "assets/images/..."
+        category: "equilibrio-energetico",
+        name: "Nome da prática",
+        description: "Descrição informativa e responsável.",
+        duration: null,
+        modality: [],
+        price: null,
+        image: "assets/images/atendimento-exemplo.webp",
+        active: false,
+        confirmedByTherapist: false
     }
 ];
 ```
 
 O sistema deverá utilizar esses dados para gerar os cards.
 
+As modalidades sugeridas na seção 12 devem permanecer desativadas (`active: false`) até que a terapeuta confirme quais realmente oferece.
+
+Não publicar cards de exemplo, dados fictícios ou modalidades não confirmadas.
+
 Isso facilitará futuras alterações.
 
 ---
 
-# 17. CARRINHO
+## 17. SOLICITAÇÃO DE ATENDIMENTO
 
 Ao clicar:
 
 ```text
-Adicionar ao carrinho
+Agendar atendimento
 ```
 
-o serviço deverá ser adicionado ao carrinho.
+o visitante deverá iniciar o fluxo de solicitação de agendamento.
 
-Utilizar:
+O sistema deverá permitir selecionar o atendimento de interesse, quando houver uma modalidade confirmada.
 
-```text
-LocalStorage
-```
+Não utilizar carrinho de compras.
 
-para preservar o carrinho durante a navegação entre páginas.
+Não tratar sessões como produtos ou itens de compra.
+
+O visitante deverá poder solicitar informações mesmo sem escolher uma modalidade específica.
 
 ---
 
-# 18. CARRINHO — DRAWER LATERAL
+## 18. PAINEL LATERAL OU MODAL DE AGENDAMENTO
 
-Ao adicionar um serviço ao carrinho, abrir uma janela lateral.
+Ao clicar em um CTA de agendamento, poderá ser aberto um modal ou drawer.
 
 Utilizar um:
 
 ```text
-Cart Drawer
+Appointment Modal / Appointment Drawer
 ```
 
-O drawer deverá surgir pelo lado direito da tela.
+O componente deverá surgir de forma elegante, sem prejudicar a navegação.
 
 Exemplo:
 
 ```text
 ┌───────────────────────────────┐
-│ Seu pedido                 X  │
+│ Solicitar atendimento       X │
 ├───────────────────────────────┤
 │                               │
-│ Limpeza de Pele               │
-│ R$ 189,90                     │
+│ Atendimento de interesse      │
 │                               │
-│ Quantidade [-] 1 [+]         │
+│ Nome                          │
 │                               │
-├───────────────────────────────┤
+│ Telefone / WhatsApp           │
 │                               │
-│ Botox                         │
-│ R$ 650,00                     │
+│ Modalidade                    │
 │                               │
-├───────────────────────────────┤
+│ Preferência de dia            │
 │                               │
-│ Subtotal: R$ 839,90           │
+│ Preferência de horário        │
 │                               │
-│ [ FINALIZAR COMPRA ]          │
+│ Mensagem                      │
+│                               │
+│ [ Enviar solicitação ]        │
 └───────────────────────────────┘
 ```
 
----
-
-# 19. FUNCIONALIDADES DO CARRINHO
-
-O usuário deverá conseguir:
-
-* Adicionar serviço
-* Remover serviço
-* Aumentar quantidade
-* Diminuir quantidade
-* Limpar carrinho
-* Visualizar subtotal
-* Visualizar total
-* Continuar comprando
-* Finalizar compra
-
-Atualizar valores automaticamente.
+O modal deverá ser responsivo e confortável para uso em dispositivos móveis.
 
 ---
 
-# 20. BOTÃO FLUTUANTE DO CARRINHO
+## 19. FUNCIONALIDADES DO AGENDAMENTO
 
-Adicionar um botão flutuante ou ícone de carrinho no Header.
+O visitante deverá conseguir:
+
+- Selecionar um atendimento, quando disponível
+- Solicitar informações gerais
+- Informar seus dados básicos de contato
+- Indicar preferência de modalidade
+- Indicar dia de preferência
+- Indicar período de preferência
+- Escrever uma mensagem opcional
+- Revisar a solicitação
+- Enviar a solicitação pelo WhatsApp
+
+Não implementar pagamento.
+
+Não apresentar horários como disponíveis sem integração real com agenda.
+
+O envio representa uma solicitação, não uma reserva confirmada.
+
+---
+
+## 20. BOTÃO FLUTUANTE DE CONTATO
+
+Adicionar um botão flutuante de WhatsApp.
 
 Exemplo:
 
 ```text
-🛒
+WhatsApp
 ```
 
-Mostrar contador:
+O botão deverá:
 
-```text
-🛒 3
-```
+- Permanecer acessível durante a navegação
+- Utilizar ícone reconhecível
+- Possuir contraste adequado
+- Abrir a conversa com o número configurado
+- Ter tooltip ou texto acessível
+- Não cobrir elementos importantes em telas pequenas
 
-O contador deverá mostrar a quantidade total de serviços no carrinho.
+Não utilizar botão de carrinho.
 
 ---
 
-# 21. CHECKOUT
+## 21. FLUXO DE AGENDAMENTO
 
 Ao clicar:
 
 ```text
-Finalizar Compra
+Agendar atendimento
 ```
 
-abrir um modal de checkout.
+abrir o modal ou formulário de solicitação.
 
-O modal deverá apresentar primeiro o resumo da compra.
+O formulário deverá apresentar os campos de maneira clara e organizada.
+
+Não utilizar checkout.
+
+Não utilizar termos como:
+
+- Finalizar compra
+- Comprar agora
+- Produto
+- Pedido de compra
+- Subtotal
+- Total da compra
+
+Utilizar termos como:
+
+- Solicitar atendimento
+- Agendar uma conversa
+- Tenho interesse
+- Enviar solicitação
 
 ---
 
-# 22. RESUMO DO PEDIDO
+## 22. RESUMO DA SOLICITAÇÃO
 
-Mostrar:
+Antes de abrir o WhatsApp, apresentar um resumo.
+
+Exemplo:
 
 ```text
-Resumo do pedido
+Resumo da solicitação
 
-Limpeza de Pele
-1x
-R$ 189,90
+Atendimento de interesse:
+Nome da prática, se selecionada
 
-Botox
-1x
-R$ 650,00
+Modalidade:
+Presencial / Online / A combinar
 
-----------------------
+Preferência de dia:
+Informação preenchida
 
-Total
-R$ 839,90
+Preferência de horário:
+Informação preenchida
+
+Mensagem:
+Texto informado pelo visitante
 ```
+
+Não exibir valores ou totais quando não houver preço confirmado.
+
+Permitir que o visitante revise as informações antes de enviar.
 
 ---
 
-# 23. FORMULÁRIO DO CLIENTE
+## 23. FORMULÁRIO DO VISITANTE
 
-Após o resumo, apresentar formulário:
+Apresentar formulário com os campos:
 
 ### Nome
 
 ```text
 Nome completo
-```
-
-### Idade
-
-```text
-Idade
 ```
 
 ### Telefone
@@ -682,135 +791,160 @@ Telefone / WhatsApp
 ### E-mail
 
 ```text
-E-mail
+E-mail (opcional)
 ```
 
-### Endereço
-
-Campos:
+### Atendimento de interesse
 
 ```text
-CEP
-Rua
-Número
-Complemento
-Bairro
-Cidade
-Estado
+Selecione um atendimento
 ```
 
-Se desejar, poderá utilizar a API pública ViaCEP para facilitar o preenchimento automático do endereço.
+Permitir também a opção:
+
+```text
+Ainda não sei / Gostaria de orientação
+```
+
+### Modalidade
+
+```text
+Presencial
+Online
+A combinar
+```
+
+Exibir somente as opções realmente oferecidas pela terapeuta. Se a modalidade não estiver confirmada, manter "A combinar".
+
+### Mensagem
+
+```text
+Conte brevemente como podemos ajudar (opcional)
+```
+
+Não solicitar idade, endereço residencial, documentos ou informações de saúde sensíveis sem necessidade.
+
+Não pedir que o visitante descreva diagnósticos, histórico clínico ou situações íntimas no formulário público.
 
 ---
 
-# 24. PREFERÊNCIA DE HORÁRIO
+## 24. PREFERÊNCIA DE HORÁRIO
 
-Criar um select:
+Criar campos de preferência:
 
 ```text
+Preferência de dia
 Preferência de horário
 
 Manhã
 Tarde
 Noite
-```
-
-Também adicionar:
-
-```text
 Não tenho preferência
 ```
 
+O campo de dia poderá utilizar um seletor de data.
+
+Não exibir horários como livres ou confirmados.
+
+Adicionar uma observação:
+
+```text
+A preferência informada será considerada na solicitação.
+A confirmação do atendimento será realizada diretamente pela terapeuta.
+```
+
 ---
 
-# 25. VALIDAÇÃO
+## 25. VALIDAÇÃO
 
-Validar todos os campos obrigatórios.
+Validar os campos obrigatórios.
 
 Validar:
 
-* Nome
-* Idade
-* Telefone
-* E-mail
-* Endereço
-* Preferência de horário
+- Nome
+- Telefone
+- Formato do e-mail, quando preenchido
+- Atendimento de interesse, quando aplicável
+- Preferência de contato, se houver
+
+Não exigir informações que não sejam necessárias para iniciar o contato.
 
 Não permitir envio com informações inválidas.
 
-Exibir mensagens de erro amigáveis.
+Exibir mensagens de erro amigáveis e específicas.
+
+Garantir que os campos tenham labels e instruções claras.
 
 ---
 
-# 26. WHATSAPP
+## 26. WHATSAPP
 
 Após o preenchimento e confirmação:
 
 ```text
-Confirmar e enviar pelo WhatsApp
+Enviar solicitação pelo WhatsApp
 ```
 
 o sistema deverá montar automaticamente uma mensagem estruturada.
 
-A mensagem deverá conter emojis.
+A mensagem deverá conter emojis com moderação.
 
 Exemplo:
 
 ```text
-✨ NOVO AGENDAMENTO / PEDIDO ✨
+✨ SOLICITAÇÃO DE ATENDIMENTO ✨
 
-Olá! Gostaria de solicitar os seguintes serviços:
+Olá, Aureci! Gostaria de obter informações sobre um atendimento.
 
-🧴 SERVIÇOS
+👤 MEUS DADOS
 
-• Limpeza de Pele
-  Quantidade: 1
-  Valor: R$ 189,90
+Nome: [nome]
 
-• Botox
-  Quantidade: 1
-  Valor: R$ 650,00
-
-💰 TOTAL: R$ 839,90
-
-👤 DADOS DO CLIENTE
-
-Nome: Maria da Silva
-Idade: 32 anos
-
-📱 Telefone:
-(11) 99999-9999
+📱 WhatsApp:
+[telefone]
 
 📧 E-mail:
-maria@email.com
+[e-mail, se informado]
 
-📍 ENDEREÇO
+🌿 ATENDIMENTO DE INTERESSE
 
-Rua Exemplo, 100
-Bairro Centro
-São Paulo - SP
-CEP 00000-000
+[atendimento selecionado ou "Gostaria de orientação"]
+
+📍 MODALIDADE
+
+[modalidade]
+
+📅 PREFERÊNCIA DE DIA
+
+[data ou preferência informada]
 
 🕐 PREFERÊNCIA DE HORÁRIO
 
-Tarde
+[período]
 
-💖 Gostaria de receber informações para confirmação do meu atendimento.
+💬 MENSAGEM
+
+[mensagem opcional]
+
+Gostaria de receber mais informações sobre o atendimento e verificar a possibilidade de agendamento.
 
 Obrigado(a)!
 ```
 
+Não incluir informações sensíveis ou desnecessárias na mensagem.
+
 ---
 
-# 27. CONFIGURAÇÃO DO WHATSAPP
+## 27. CONFIGURAÇÃO DO WHATSAPP
 
 Não colocar o número do WhatsApp espalhado pelo código.
 
 Criar uma variável/configuração centralizada:
 
 ```javascript
-const clinicConfig = {
-    whatsapp: "5511999999999"
+const therapistConfig = {
+    name: "Aureci Sena",
+    whatsapp: ""
 };
 ```
 
@@ -824,9 +958,11 @@ O número deverá utilizar o padrão internacional:
 
 Sem espaços, parênteses ou caracteres especiais.
 
+Não inventar número de telefone.
+
 ---
 
-# 28. ENCODING DA MENSAGEM
+## 28. ENCODING DA MENSAGEM
 
 Utilizar:
 
@@ -839,33 +975,38 @@ para transformar a mensagem em uma URL válida para WhatsApp.
 Exemplo conceitual:
 
 ```javascript
-const url = `https://wa.me/${clinicConfig.whatsapp}?text=${encodeURIComponent(message)}`;
+const url = `https://wa.me/${therapistConfig.whatsapp}?text=${encodeURIComponent(message)}`;
 ```
 
 Abrir o WhatsApp em uma nova aba/janela.
 
+Validar se o número foi configurado antes de tentar abrir o link.
+
 ---
 
-# 29. CONFIRMAÇÃO FINAL
+## 29. CONFIRMAÇÃO FINAL
 
 Antes de abrir o WhatsApp, apresentar uma confirmação:
 
 ```text
-Tudo certo! 💖
+Tudo pronto!
 
-Seu pedido foi preparado.
+Sua solicitação foi preparada.
 
-Ao continuar, você será direcionado para o WhatsApp
-da clínica para concluir o agendamento.
+Ao continuar, você será direcionado(a) para o WhatsApp
+para conversar diretamente com a terapeuta e verificar
+a disponibilidade do atendimento.
 
-[ Voltar ]
+[ Voltar e revisar ]
 
-[ Enviar pelo WhatsApp ]
+[ Continuar para o WhatsApp ]
 ```
+
+Não afirmar que a sessão foi agendada ou confirmada automaticamente.
 
 ---
 
-# 30. PÁGINA SOBRE
+## 30. PÁGINA SOBRE
 
 Criar:
 
@@ -875,63 +1016,61 @@ sobre.html
 
 Conteúdo:
 
-* História da clínica
-* Propósito
-* Missão
-* Valores
-* Diferenciais
-* Tecnologia
-* Atendimento personalizado
-* Segurança
-* Experiência
+- Apresentação da terapeuta
+- História e trajetória, somente com informações fornecidas
+- Propósito
+- Filosofia de trabalho
+- Formação e qualificações, quando informadas
+- Experiência profissional, quando informada
+- Abordagem de acolhimento
+- Valores
+- Como compreende o cuidado integral
+- CTA para contato
 
 Adicionar imagens editoriais sofisticadas.
 
-Criar uma narrativa visual.
+Criar uma narrativa visual humana e acolhedora.
+
+Não inventar biografia, títulos, certificações, anos de experiência ou histórias pessoais.
+
+Se os dados ainda não estiverem disponíveis, criar estrutura configurável e deixar os campos claramente identificados para preenchimento posterior.
 
 ---
 
-# 31. PÁGINA EQUIPE
+## 31. APRESENTAÇÃO DA TERAPEUTA
 
-Criar:
+A apresentação deverá ser centrada em Aureci Sena.
 
-```text
-equipe.html
-```
+Não criar equipe fictícia.
 
-Mostrar profissionais em cards.
-
-Cada profissional:
+Criar uma seção de apresentação com:
 
 ```text
-Foto
+Foto da terapeuta
 Nome
-Cargo / Especialidade
-Descrição
-Especialidades
+Apresentação
+Formação, se informada
+Abordagens confirmadas
+Trajetória, se informada
+Mensagem pessoal, se fornecida
 ```
 
-Adicionar efeitos hover.
+Adicionar efeitos hover discretos, sem transformar a apresentação em um catálogo de profissionais.
 
-Criar uma seção destacando:
-
-> "Profissionais preparados para cuidar de você."
+Criar uma seção destacando uma mensagem acolhedora, sem atribuir frases ou declarações à terapeuta que não tenham sido fornecidas.
 
 ---
 
-# 32. DEPOIMENTOS
+## 32. DEPOIMENTOS
 
-Adicionar uma seção de depoimentos na Home.
+Adicionar uma seção de depoimentos na Home somente se existirem depoimentos reais e autorizados.
 
 Criar carousel/slideshow.
 
-Cada depoimento deverá apresentar:
+Cada depoimento poderá apresentar:
 
 ```text
-Foto/avatar
-Nome
-Avaliação
-★★★★★
+Nome ou identificação autorizada
 Depoimento
 ```
 
@@ -945,63 +1084,86 @@ Adicionar indicadores.
 
 O carousel deverá funcionar sem depender de backend.
 
+Não inventar depoimentos, avaliações, notas, resultados ou fotografias de clientes.
+
+Se não houver depoimentos reais, substituir a seção por uma mensagem sobre a experiência de acolhimento e a filosofia de atendimento, sem simular relatos de clientes.
+
 ---
 
-# 33. FAQ
+## 33. FAQ
 
 Criar FAQ utilizando Accordion.
 
 Perguntas relacionadas a:
 
-* Como funciona o agendamento?
-* É necessário fazer avaliação?
-* Quais tratamentos são indicados para meu caso?
-* Posso contratar mais de um procedimento?
-* Como funciona o pagamento?
-* Como funciona o atendimento?
-* Quanto tempo dura cada procedimento?
-* Os tratamentos são seguros?
-* Posso cancelar ou remarcar?
-* Como entrar em contato?
+- Como funciona o primeiro contato?
+- Como funciona o agendamento?
+- Os atendimentos podem ser presenciais ou online?
+- Quanto tempo dura uma sessão?
+- Preciso escolher uma prática antes de entrar em contato?
+- Como saber qual atendimento é adequado para mim?
+- Como funciona o pagamento?
+- Como remarcar ou cancelar?
+- O que devo esperar de uma sessão?
+- Como entrar em contato?
+
+As respostas deverão utilizar somente informações confirmadas.
+
+Quando não houver informação, utilizar resposta neutra orientando o visitante a entrar em contato.
+
+Adicionar uma explicação responsável de que práticas integrativas e holísticas não substituem avaliação, diagnóstico ou tratamento médico ou psicológico quando estes forem necessários.
 
 O accordion deverá possuir animações suaves.
 
 ---
 
-# 34. MARCAS
+## 34. ABORDAGENS E PRÁTICAS
 
 Criar uma seção:
 
 ```text
-Marcas que confiam em nossa qualidade
+Conheça as abordagens
 ```
 
-Criar um carrossel horizontal automático.
+Apresentar as práticas efetivamente oferecidas pela terapeuta, organizadas por categoria.
 
-Utilizar logos de marcas conhecidas do segmento de:
+Possíveis modalidades para avaliação e confirmação:
 
-* Cosméticos
-* Skincare
-* Estética
-* Tecnologia estética
-* Dermocosméticos
+- Reiki
+- Aromaterapia
+- Terapia floral / Florais de Bach
+- Cromoterapia
+- Reflexologia
+- Meditação guiada
+- Mindfulness
+- Respiração consciente
+- Constelação familiar
+- Arteterapia
+- Bioenergética
+- Relaxamento guiado
 
-O carrossel deverá:
+Essas modalidades são referências de práticas encontradas no mercado. Não significa que a terapeuta ofereça todas elas.
 
-* Ser infinito
-* Ter animação suave
-* Pausar no hover
-* Ser responsivo
+Não utilizar nomes de associações, selos, marcas, certificações ou instituições como se houvesse parceria.
 
-Caso não existam logos oficiais disponíveis no projeto, criar placeholders elegantes claramente identificados para posterior substituição.
+Não apresentar práticas que a terapeuta não tenha confirmado ou para as quais não possua qualificação adequada.
 
-Não inventar parceria ou certificação da clínica com nenhuma marca.
+Para cada prática confirmada, apresentar:
+
+- Nome
+- Descrição objetiva
+- Como funciona, conforme informações fornecidas
+- Duração, se informada
+- Modalidade, se informada
+- CTA para obter informações
+
+Não prometer cura, diagnóstico, tratamento de doenças ou resultados garantidos.
 
 ---
 
-# 35. MAPA
+## 35. LOCALIZAÇÃO
 
-Adicionar seção de localização.
+Adicionar seção de localização somente se houver endereço de atendimento presencial confirmado.
 
 Layout:
 
@@ -1017,56 +1179,62 @@ Layout:
 └───────────────────────────┴──────────────────────┘
 ```
 
-Como os dados reais da clínica ainda podem não estar disponíveis, utilizar dados configuráveis.
+Como os dados reais podem ainda não estar disponíveis, utilizar dados configuráveis.
 
 Criar uma configuração:
 
 ```javascript
-const clinicConfig = {
-    name: "Nome da Clínica",
-    address: "Endereço da clínica",
-    city: "Cidade - UF",
-    whatsapp: "5511999999999",
-    instagram: "#",
-    facebook: "#"
+const therapistConfig = {
+    name: "Aureci Sena",
+    address: "",
+    city: "",
+    whatsapp: "",
+    instagram: "",
+    facebook: ""
 };
 ```
 
+Não inventar endereço ou localização.
+
+Se o atendimento for exclusivamente online ou o endereço não tiver sido informado, ocultar o mapa e apresentar apenas os canais de contato disponíveis.
+
 ---
 
-# 36. REDES SOCIAIS
+## 36. REDES SOCIAIS
 
 Adicionar links para:
 
-* Instagram
-* Facebook
-* WhatsApp
-* TikTok, se aplicável
+- Instagram
+- Facebook
+- WhatsApp
+- TikTok, se aplicável
 
-Utilizar ícones.
+Utilizar ícones coerentes com a identidade visual.
 
 Não inventar URLs reais.
 
 Deixar os links configuráveis.
 
+Ocultar redes sociais sem endereço/URL confirmado.
+
 ---
 
-# 37. CTA DE AGENDAMENTO
+## 37. CTA DE AGENDAMENTO
 
 O CTA deverá aparecer em diversos pontos do site.
 
 Exemplos:
 
 ```text
-Agendar Atendimento
+Agendar atendimento
 ```
 
 ```text
-Quero cuidar de mim
+Quero conhecer as abordagens
 ```
 
 ```text
-Conhecer tratamentos
+Quero conversar
 ```
 
 ```text
@@ -1074,56 +1242,61 @@ Falar pelo WhatsApp
 ```
 
 ```text
-Montar meu atendimento
+Solicitar informações
 ```
 
 Todos devem possuir comportamento funcional.
 
+Os CTAs de agendamento deverão abrir o formulário ou direcionar para o WhatsApp, conforme o contexto.
+
+Não utilizar linguagem de compra ou contratação de produtos.
+
 ---
 
-# 38. FOOTER
+## 38. FOOTER
 
 Criar footer completo.
 
 Colunas:
 
-### Clínica
+### Sobre
 
-* Sobre nós
-* Equipe
-* Serviços
-* Contato
+- Conheça a terapeuta
+- Filosofia de trabalho
+- Atendimentos
+- Contato
 
 ### Atendimento
 
-* Agendamento
-* WhatsApp
-* Horários
+- Solicitar atendimento
+- WhatsApp
+- Modalidades disponíveis, se confirmadas
+- Horários, se informados
 
-### Serviços
+### Abordagens
 
-* Laser
-* Facial
-* Corporal
-* Harmonização
-* Bem-estar
+- Práticas confirmadas
+- Como funciona
+- Perguntas frequentes
 
 ### Redes sociais
 
-Instagram
-Facebook
-WhatsApp
+- Instagram
+- Facebook
+- WhatsApp
 
 Adicionar:
 
 ```text
-© 2026 Nome da Clínica
+© 2026 Aureci Sena
 Todos os direitos reservados.
 ```
 
+Não inventar dados de contato, endereço, registro profissional ou informações institucionais.
+
 ---
 
-# 39. RESPONSIVIDADE
+## 39. RESPONSIVIDADE
 
 O site deve funcionar perfeitamente em:
 
@@ -1143,63 +1316,70 @@ Priorizar Mobile First.
 
 Testar:
 
-* Header
-* Menu
-* Hero
-* Cards
-* Carrosséis
-* Carrinho
-* Drawer
-* Modais
-* Checkout
-* Formulários
-* Footer
+- Header
+- Menu
+- Hero
+- Cards
+- Carrosséis
+- Modais
+- Formulários
+- FAQ
+- Footer
+- Botão flutuante de WhatsApp
+
+Garantir que textos, imagens e botões não fiquem cortados ou sobrepostos.
 
 ---
 
-# 40. ANIMAÇÕES
+## 40. ANIMAÇÕES
 
 Adicionar animações elegantes e discretas.
 
 Utilizar:
 
-* Fade in
-* Fade up
-* Scale
-* Slide
-* Hover
-* Parallax leve
-* Reveal on scroll
-* Microinterações
+- Fade in
+- Fade up
+- Scale
+- Slide
+- Hover
+- Parallax leve
+- Reveal on scroll
+- Microinterações
 
 Evitar excesso.
 
 A animação deverá transmitir:
 
-> sofisticação e fluidez
+> Serenidade, sofisticação e fluidez.
 
-e não parecer um site exageradamente animado.
+Não utilizar animações agressivas, efeitos piscantes ou movimentos que prejudiquem a leitura.
+
+Respeitar `prefers-reduced-motion`.
 
 ---
 
-# 41. ACESSIBILIDADE
+## 41. ACESSIBILIDADE
 
 Implementar boas práticas:
 
-* HTML semântico
-* Labels nos formulários
-* aria-label quando necessário
-* Navegação por teclado
-* Focus states
-* Contraste adequado
-* Alt text
-* Botões semanticamente corretos
-* Fechamento de modais pelo ESC
-* Controle de foco nos modais
+- HTML semântico
+- Labels nos formulários
+- aria-label quando necessário
+- Navegação por teclado
+- Focus states
+- Contraste adequado
+- Alt text
+- Botões semanticamente corretos
+- Fechamento de modais pelo ESC
+- Controle de foco nos modais
+- Estados de foco visíveis
+- Mensagens de validação acessíveis
+
+Garantir que o site possa ser utilizado sem depender exclusivamente de cores, imagens ou movimentos.
 
 ---
 
-# 42. SEO
+## 42. SEO
 
 Implementar SEO básico em todas as páginas.
 
@@ -1234,76 +1414,94 @@ og:url
 
 Criar URLs amigáveis.
 
+Utilizar termos de busca relacionados a terapeuta holística, terapias integrativas, atendimentos e bem-estar somente quando forem coerentes com os serviços reais.
+
+Não inserir palavras-chave de modalidades que a terapeuta não oferece.
+
 ---
 
-# 43. PERFORMANCE
+## 43. PERFORMANCE
 
 Priorizar performance.
 
 Implementar:
 
-* Lazy loading de imagens
-* Imagens otimizadas
-* WebP quando possível
-* SVG para ícones
-* CSS otimizado
-* JavaScript modular
-* Evitar bibliotecas desnecessárias
-* Evitar scripts pesados
-* Evitar bloqueio de renderização
+- Lazy loading de imagens
+- Imagens otimizadas
+- WebP quando possível
+- SVG para ícones
+- CSS otimizado
+- JavaScript modular
+- Evitar bibliotecas desnecessárias
+- Evitar scripts pesados
+- Evitar bloqueio de renderização
+- Carregamento adequado de fontes
+- Dimensões de imagens para evitar layout shift
 
 ---
 
-# 44. MODAIS
+## 44. MODAIS
 
 Todos os modais deverão:
 
-* Ter overlay
-* Possuir animação
-* Fechar no botão X
-* Fechar com ESC
-* Fechar ao clicar fora, quando apropriado
-* Bloquear scroll da página
-* Ser responsivos
+- Ter overlay
+- Possuir animação
+- Fechar no botão X
+- Fechar com ESC
+- Fechar ao clicar fora, quando apropriado
+- Bloquear scroll da página
+- Ser responsivos
+- Possuir foco acessível
+- Retornar o foco ao elemento que abriu o modal
 
 No mobile, adaptar o comportamento para uma experiência confortável.
 
 ---
 
-# 45. UX DO CARRINHO
+## 45. UX DO AGENDAMENTO
 
-A experiência do carrinho deverá ser muito bem trabalhada.
+A experiência de solicitação deverá ser muito bem trabalhada.
 
-Quando adicionar um serviço:
+Quando o visitante iniciar um agendamento:
 
-1. Mostrar feedback visual.
-2. Atualizar contador.
-3. Atualizar total.
-4. Abrir drawer.
-5. Permitir continuar navegando.
-6. Preservar os itens via LocalStorage.
+1. Mostrar o formulário adequado.
+2. Permitir selecionar uma prática confirmada ou solicitar orientação.
+3. Coletar somente os dados necessários.
+4. Validar as informações.
+5. Exibir resumo.
+6. Permitir revisar os dados.
+7. Abrir o WhatsApp com a mensagem preparada.
 
 Exibir também uma pequena confirmação:
 
 ```text
-✓ Serviço adicionado ao seu atendimento
+✓ Sua solicitação está pronta para envio pelo WhatsApp.
 ```
+
+Não apresentar a solicitação como agendamento confirmado.
 
 ---
 
-# 46. PREÇOS
+## 46. VALORES E DURAÇÃO
 
-Utilizar valores fictícios/demonstrativos enquanto os valores reais não forem fornecidos.
+Não utilizar valores fictícios/demonstrativos.
 
-Deixar os preços centralizados no objeto JavaScript dos serviços para facilitar atualização.
+Deixar preços centralizados no objeto JavaScript dos atendimentos para facilitar atualização, caso a terapeuta decida divulgá-los.
 
 Exemplo:
 
 ```javascript
-price: 199.90
+price: null,
+duration: null
 ```
 
-Formatar para o padrão brasileiro:
+Quando o valor não for fornecido, ocultar o preço ou utilizar:
+
+```text
+Consulte informações
+```
+
+Formatar valores confirmados para o padrão brasileiro:
 
 ```text
 R$ 199,90
@@ -1312,42 +1510,50 @@ R$ 199,90
 Utilizar:
 
 ```javascript
-Intl.NumberFormat('pt-BR', {
+new Intl.NumberFormat('pt-BR', {
     style: 'currency',
     currency: 'BRL'
 });
 ```
 
+Não criar promoções, descontos, pacotes ou condições comerciais sem autorização.
+
 ---
 
-# 47. DADOS CONFIGURÁVEIS
+## 47. DADOS CONFIGURÁVEIS
 
 Criar um arquivo de configuração central.
 
 Exemplo:
 
 ```javascript
-const clinicConfig = {
-    name: "Nome da Clínica",
-    whatsapp: "5511999999999",
-    phone: "(11) 99999-9999",
-    email: "contato@clinica.com.br",
-    address: "Endereço da clínica",
-    city: "São Paulo - SP",
-    instagram: "#",
-    facebook: "#",
+const therapistConfig = {
+    name: "Aureci Sena",
+    professionalTitle: "",
+    whatsapp: "",
+    phone: "",
+    email: "",
+    address: "",
+    city: "",
+    instagram: "",
+    facebook: "",
     openingHours: {
-        monday: "09:00 - 18:00",
-        saturday: "09:00 - 13:00"
-    }
+        monday: "",
+        saturday: ""
+    },
+    modalities: [],
+    biography: "",
+    presentation: ""
 };
 ```
 
-O objetivo é permitir que todas as informações da clínica sejam alteradas em um único local.
+O objetivo é permitir que todas as informações da terapeuta sejam alteradas em um único local.
+
+Não preencher os campos vazios com dados inventados.
 
 ---
 
-# 48. ARQUITETURA JAVASCRIPT
+## 48. ARQUITETURA JAVASCRIPT
 
 Organizar o JavaScript de forma modular.
 
@@ -1359,44 +1565,36 @@ main.js
 
 Responsável por:
 
-* Menu
-* Header
-* Scroll
-* Animações
-* Componentes gerais
+- Menu
+- Header
+- Scroll
+- Animações
+- Componentes gerais
 
 ```text
-services.js
+therapies.js
 ```
 
 Responsável por:
 
-* Catálogo
-* Filtros
-* Busca
-* Renderização
+- Catálogo de atendimentos
+- Categorias
+- Filtros
+- Busca
+- Renderização dos cards
+- Exibição somente de modalidades confirmadas e ativas
 
 ```text
-cart.js
+appointment.js
 ```
 
 Responsável por:
 
-* Carrinho
-* LocalStorage
-* Quantidades
-* Totais
-* Drawer
-
-```text
-checkout.js
-```
-
-Responsável por:
-
-* Formulário
-* Validação
-* Resumo
+- Formulário
+- Validação
+- Resumo da solicitação
+- Preferências de dia e horário
+- Abertura e fechamento do modal
 
 ```text
 whatsapp.js
@@ -1404,49 +1602,56 @@ whatsapp.js
 
 Responsável por:
 
-* Construção da mensagem
-* Encode
-* Redirecionamento
+- Construção da mensagem
+- Encode
+- Validação do número configurado
+- Redirecionamento para WhatsApp
+
+Não criar módulos de carrinho, estoque, compra ou pagamento.
 
 ---
 
-# 49. COMPONENTES REUTILIZÁVEIS
+## 49. COMPONENTES REUTILIZÁVEIS
 
 Mesmo utilizando HTML estático, criar componentes de interface consistentes.
 
 Exemplos:
 
-* Header
-* Footer
-* Service Card
-* Team Card
-* Testimonial Card
-* FAQ Item
-* Modal
-* Cart Drawer
-* Buttons
-* Badges
-* Section Headers
+- Header
+- Footer
+- Therapy Card
+- About Section
+- Testimonial Card
+- FAQ Item
+- Modal
+- Appointment Drawer
+- Buttons
+- Badges
+- Section Headers
+- Contact Card
 
 Manter consistência visual.
 
 ---
 
-# 50. MICROCOPY
+## 50. MICROCOPY
 
 Não utilizar textos genéricos de template.
 
-Criar textos comerciais naturais em português brasileiro.
+Criar textos naturais em português brasileiro.
 
 A comunicação deverá ser:
 
-* Elegante
-* Feminina sem ser excessivamente feminina
-* Acolhedora
-* Profissional
-* Sofisticada
-* Comercial
-* Inspiradora
+- Acolhedora
+- Respeitosa
+- Humana
+- Elegante
+- Profissional
+- Serena
+- Clara
+- Inspiradora, sem exageros
+
+Evitar linguagem de venda agressiva.
 
 Evitar frases genéricas como:
 
@@ -1454,77 +1659,88 @@ Evitar frases genéricas como:
 
 ou:
 
-> "Somos uma empresa líder..."
+> "Somos referência absoluta no mercado."
 
-Criar copy realista e convincente.
+Não criar afirmações não comprovadas sobre resultados, experiência ou reconhecimento profissional.
+
+Utilizar linguagem responsável, sem promessas de cura ou garantias.
 
 ---
 
-# 51. IMAGENS E ASSETS
+## 51. IMAGENS E ASSETS
 
 Sempre que possível:
 
-* Criar imagens próprias para o projeto
-* Utilizar imagens coerentes entre si
-* Manter consistência de iluminação
-* Manter estética premium
-* Evitar imagens claramente artificiais ou genéricas
+- Criar imagens próprias para o projeto
+- Utilizar imagens coerentes entre si
+- Manter consistência de iluminação
+- Manter estética acolhedora
+- Evitar imagens claramente artificiais ou genéricas
+- Respeitar a identidade visual de referência
+- Utilizar imagens com licença ou autorização adequada
 
 O Hero deve ser especialmente impactante.
 
 Criar também imagens adequadas para:
 
-* Laser
-* Facial
-* Corporal
-* Harmonização
-* Bem-estar
-* Equipe
-* Sobre
-* Ambiente
+- Natureza
+- Bem-estar
+- Equilíbrio
+- Terapias confirmadas
+- Apresentação da terapeuta
+- Sobre
+- Ambiente de atendimento
+- Contato
+
+Não gerar imagens que representem uma modalidade específica se ela não tiver sido confirmada.
 
 ---
 
-# 52. SEGURANÇA
+## 52. SEGURANÇA
 
 Como o projeto é exclusivamente frontend:
 
-* Não armazenar dados sensíveis desnecessariamente.
-* Não simular pagamento.
-* Não criar processamento financeiro real.
-* Não armazenar dados pessoais do checkout permanentemente no LocalStorage.
-* Limpar os dados do formulário após concluir o fluxo.
-* Não expor chaves privadas.
+- Não armazenar dados pessoais desnecessariamente.
+- Não simular pagamento.
+- Não criar processamento financeiro real.
+- Não armazenar dados pessoais do formulário permanentemente no LocalStorage.
+- Limpar os dados do formulário após concluir o fluxo, quando apropriado.
+- Não expor chaves privadas.
+- Não solicitar dados sensíveis sem necessidade.
+- Não transmitir dados do visitante para serviços não informados.
 
-O "carrinho" representa uma solicitação/agendamento de serviços, não um sistema de pagamento online.
+O formulário representa uma solicitação de contato/agendamento, não um sistema de prontuário ou cadastro clínico.
+
+Não coletar informações de saúde detalhadas pelo formulário público.
 
 ---
 
-# 53. IMPORTANTE SOBRE O CHECKOUT
+## 53. IMPORTANTE SOBRE O AGENDAMENTO
 
 O botão:
 
 ```text
-Finalizar Compra
+Agendar atendimento
 ```
 
-não deverá processar pagamento.
+não deverá confirmar automaticamente uma sessão.
 
 Ele deverá apenas:
 
-1. Exibir resumo.
-2. Solicitar dados do cliente.
-3. Validar informações.
-4. Montar pedido.
-5. Montar mensagem.
-6. Abrir WhatsApp.
+1. Exibir formulário.
+2. Solicitar dados básicos de contato.
+3. Permitir informar preferências.
+4. Validar informações.
+5. Montar resumo da solicitação.
+6. Montar mensagem.
+7. Abrir WhatsApp.
 
 Utilizar linguagem de UX adequada.
 
 Quando necessário, pode utilizar:
 
 ```text
-Finalizar atendimento
+Solicitar atendimento
 ```
 
 ou:
@@ -1533,296 +1749,325 @@ ou:
 Enviar solicitação
 ```
 
-para evitar a impressão de que existe pagamento online.
+para evitar a impressão de que existe confirmação automática.
 
 ---
 
-# 54. ESTADOS DA INTERFACE
+## 54. ESTADOS DA INTERFACE
 
 Implementar estados:
 
-### Carrinho vazio
+### Formulário vazio
 
 ```text
-Seu carrinho está vazio.
-
-Encontre um tratamento ideal para você.
-
-[ Ver serviços ]
+Preencha as informações para solicitar um atendimento.
 ```
 
-### Carrinho com itens
+### Formulário preenchido
 
-Mostrar itens normalmente.
+Mostrar os dados informados e permitir revisão.
 
 ### Formulário inválido
 
 Mostrar mensagens específicas.
 
-### Pedido pronto
+### Solicitação pronta
 
 Mostrar confirmação antes do WhatsApp.
 
-### Serviço adicionado
+### WhatsApp não configurado
 
-Mostrar feedback.
+```text
+O canal de WhatsApp ainda não foi configurado.
+Entre em contato pelos canais disponíveis.
+```
+
+### Nenhum atendimento cadastrado
+
+```text
+As informações sobre os atendimentos estão sendo atualizadas.
+Entre em contato para saber mais.
+```
+
+Não deixar cards fictícios visíveis.
 
 ---
 
-# 55. DETALHES DE UI
+## 55. DETALHES DE UI
 
 Adicionar:
 
-* Bordas arredondadas moderadas
-* Sombras muito suaves
-* Cards premium
-* Hover elegante
-* Botões com microinterações
-* Ícones minimalistas
-* Espaçamentos generosos
-* Imagens com border-radius
-* Gradientes muito sutis quando necessário
+- Bordas arredondadas moderadas
+- Sombras muito suaves
+- Cards elegantes
+- Hover discreto
+- Botões com microinterações
+- Ícones minimalistas
+- Espaçamentos generosos
+- Imagens com border-radius
+- Gradientes muito sutis quando necessário
+- Elementos gráficos naturais e discretos
 
 Não utilizar estética excessivamente "tech".
 
-A clínica deve parecer:
+O site deve parecer:
 
-> Premium + Beauty + Wellness + Medical Aesthetics
+> Premium + Holístico + Natural + Acolhedor + Bem-estar.
+
+Evitar aparência de clínica de estética, loja virtual ou instituição médica.
 
 ---
 
-# 56. MOBILE
+## 56. MOBILE
 
 No mobile:
 
-* Header compacto
-* Menu fullscreen ou drawer
-* Hero adaptado
-* Cards em uma coluna
-* Carrosséis touch-friendly
-* Carrinho como bottom sheet ou drawer
-* Checkout otimizado para telas pequenas
-* Inputs confortáveis
-* Botões com área de toque adequada
+- Header compacto
+- Menu fullscreen ou drawer
+- Hero adaptado
+- Cards em uma coluna
+- Carrosséis touch-friendly
+- Modal de agendamento otimizado para telas pequenas
+- Inputs confortáveis
+- Botões com área de toque adequada
+- WhatsApp flutuante sem sobrepor conteúdo
+- Textos com tamanho e espaçamento adequados
+
+Garantir boa experiência em telas pequenas.
 
 ---
 
-# 57. MAPA E CONTATO
+## 57. CONTATO
 
 Criar uma seção de contato com:
 
 ```text
-Endereço
-Telefone
 WhatsApp
 E-mail
 Horário de atendimento
 Redes sociais
-Mapa
+Endereço, se informado
+Modalidades de atendimento, se confirmadas
 ```
 
 Adicionar CTA:
 
 ```text
-Como chegar
+Falar pelo WhatsApp
 ```
 
 e:
 
 ```text
-Falar no WhatsApp
+Solicitar atendimento
 ```
+
+Não exibir campos sem dados reais.
+
+Se não houver endereço presencial confirmado, não apresentar mapa.
 
 ---
 
-# 58. EXPERIÊNCIA DE NAVEGAÇÃO
+## 58. EXPERIÊNCIA DE NAVEGAÇÃO
 
 A navegação deve ser fluida.
 
 Adicionar:
 
-* Smooth scroll
-* Breadcrumbs nas páginas internas quando fizer sentido
-* Links entre páginas
-* CTAs consistentes
-* Botão "Voltar ao topo"
+- Smooth scroll
+- Breadcrumbs nas páginas internas quando fizer sentido
+- Links entre páginas
+- CTAs consistentes
+- Botão "Voltar ao topo"
+- Destaque de navegação atual
+- Estados de carregamento quando necessários
+
+Garantir que todos os links internos apontem para páginas ou seções existentes.
 
 ---
 
-# 59. PÁGINAS INTERNAS
+## 59. PÁGINAS INTERNAS
 
 As páginas internas devem possuir:
 
 ### Sobre
 
-Hero interno + conteúdo + diferenciais + valores + CTA.
+Hero interno + apresentação + trajetória + filosofia + qualificações confirmadas + CTA.
 
-### Serviços
+### Atendimentos
 
-Hero interno + filtros + catálogo + carrinho.
-
-### Equipe
-
-Hero interno + profissionais + especialidades + CTA.
+Hero interno + categorias + práticas confirmadas + descrições + CTA de solicitação.
 
 ### Contato
 
-Hero interno + informações + formulário/WhatsApp + mapa + redes sociais.
+Hero interno + informações de contato + formulário/WhatsApp + redes sociais + mapa, somente se houver endereço real.
+
+Não criar página de equipe ou páginas individuais de profissionais fictícios.
 
 ---
 
-# 60. QUALIDADE VISUAL
+## 60. QUALIDADE VISUAL
 
 O projeto final deverá parecer desenvolvido por uma agência profissional.
 
 Evitar:
 
-* Layouts genéricos
-* Excesso de cards
-* Espaçamento inconsistente
-* Cores aleatórias
-* Tipografia sem hierarquia
-* Botões genéricos
-* Imagens incompatíveis
-* Componentes desalinhados
-* Design padrão de Tailwind sem personalização
+- Layouts genéricos
+- Excesso de cards
+- Espaçamento inconsistente
+- Cores aleatórias
+- Tipografia sem hierarquia
+- Botões genéricos
+- Imagens incompatíveis
+- Componentes desalinhados
+- Design padrão de Tailwind sem personalização
+- Símbolos esotéricos em excesso
+- Textos com promessas terapêuticas
+- Informações profissionais inventadas
 
 Utilizar Tailwind como base, mas criar uma identidade visual própria.
 
 ---
 
-# 61. TESTES
+## 61. TESTES
 
 Antes de considerar o projeto concluído, testar:
 
-## Navegação
+### Navegação
 
-* Todos os links
-* Todas as páginas
-* Menu desktop
-* Menu mobile
+- Todos os links
+- Todas as páginas
+- Menu desktop
+- Menu mobile
 
-## Serviços
+### Atendimentos
 
-* Filtros
-* Busca
-* Cards
-* Preços
-* Adição ao carrinho
+- Categorias
+- Filtros
+- Busca
+- Cards
+- Exibição somente de práticas confirmadas
+- Botões de informação e agendamento
 
-## Carrinho
+### Agendamento
 
-* Adicionar
-* Remover
-* Quantidade
-* Total
-* LocalStorage
-* Carrinho vazio
+- Abrir e fechar modal
+- Campos
+- Validação
+- Resumo
+- Preferência de dia e horário
+- Estado de formulário vazio
+- Estado de formulário inválido
 
-## Checkout
+### WhatsApp
 
-* Validação
-* Resumo
-* Campos
-* Preferência de horário
+- Construção da mensagem
+- Encoding
+- Emojis
+- Dados básicos de contato
+- Número configurado
+- Abertura correta do WhatsApp
 
-## WhatsApp
-
-* Construção da mensagem
-* Encoding
-* Emojis
-* Valores
-* Dados do cliente
-* Abertura correta do WhatsApp
-
-## Responsividade
+### Responsividade
 
 Testar desktop, tablet e mobile.
 
+### Conteúdo
+
+- Não existem modalidades não confirmadas publicadas.
+- Não existem depoimentos fictícios.
+- Não existem qualificações inventadas.
+- Não existem promessas de cura.
+- Não existem dados de contato fictícios.
+
 ---
 
-# 62. CRITÉRIO DE CONCLUSÃO
+## 62. CRITÉRIO DE CONCLUSÃO
 
 O projeto somente deverá ser considerado concluído quando:
 
-* Todas as páginas estiverem implementadas.
-* Todos os links funcionarem.
-* O design estiver consistente.
-* O site estiver responsivo.
-* O catálogo funcionar.
-* Os filtros funcionarem.
-* O carrinho funcionar.
-* O LocalStorage funcionar.
-* O checkout funcionar.
-* A validação funcionar.
-* O resumo do pedido funcionar.
-* A mensagem do WhatsApp funcionar.
-* O menu mobile funcionar.
-* FAQ funcionar.
-* Depoimentos funcionarem.
-* Carrossel de marcas funcionar.
-* Mapa estiver implementado.
-* CTAs estiverem funcionando.
-* Não existirem erros no console.
-* Não existirem placeholders visíveis desnecessários.
-* Não existirem links quebrados.
-* O projeto estiver organizado e documentado.
+- Todas as páginas estiverem implementadas.
+- Todos os links funcionarem.
+- O design estiver consistente.
+- O site estiver responsivo.
+- O catálogo informativo funcionar.
+- Os filtros funcionarem, quando aplicáveis.
+- Somente atendimentos confirmados estiverem publicados.
+- O formulário funcionar.
+- A validação funcionar.
+- O resumo da solicitação funcionar.
+- A mensagem do WhatsApp funcionar.
+- O menu mobile funcionar.
+- FAQ funcionar.
+- Depoimentos reais forem exibidos somente se fornecidos e autorizados.
+- Mapa estiver implementado somente se houver endereço confirmado.
+- CTAs estiverem funcionando.
+- Não existirem erros no console.
+- Não existirem placeholders visíveis desnecessários.
+- Não existirem links quebrados.
+- O projeto estiver organizado e documentado.
 
 ---
 
-# 63. README
+## 63. README
 
 Criar um README.md contendo:
 
-* Nome do projeto
-* Descrição
-* Tecnologias
-* Estrutura
-* Como executar
-* Como alterar dados da clínica
-* Como alterar serviços
-* Como alterar preços
-* Como alterar número do WhatsApp
-* Como alterar redes sociais
-* Como alterar endereço
-* Como substituir imagens
-* Como publicar
+- Nome do projeto
+- Descrição
+- Tecnologias
+- Estrutura
+- Como executar
+- Como alterar dados da terapeuta
+- Como alterar atendimentos
+- Como ativar ou desativar uma prática
+- Como alterar número do WhatsApp
+- Como alterar redes sociais
+- Como alterar endereço
+- Como substituir imagens
+- Como publicar
+
+Explicar de forma simples onde editar cada informação.
 
 ---
 
-# 64. RESULTADO ESPERADO
+## 64. RESULTADO ESPERADO
 
 Entregar um website:
 
-> **MULTI-PAGES + PREMIUM + RESPONSIVO + FRONTEND STATIC + CATÁLOGO DE SERVIÇOS + CARRINHO + CHECKOUT + WHATSAPP**
+> **MULTI-PAGES + PREMIUM + RESPONSIVO + FRONTEND STATIC + APRESENTAÇÃO DA TERAPEUTA + CATÁLOGO INFORMATIVO DE ATENDIMENTOS + AGENDAMENTO VIA WHATSAPP**
 
 O projeto deve combinar:
 
 ```text
-Beauty
+Holistic Wellness
 +
-Wellness
+Well-being
 +
-Aesthetics
+Self-knowledge
 +
-Technology
+Human Care
 +
 Premium UX
++
+Accessibility
 +
 Conversion
 ```
 
-O usuário deve conseguir entrar na Home, conhecer a clínica, visualizar os tratamentos, consultar preços, adicionar procedimentos ao carrinho, revisar seu atendimento, preencher seus dados e enviar a solicitação completa diretamente pelo WhatsApp.
+O usuário deve conseguir entrar na Home, conhecer a terapeuta, compreender sua proposta de trabalho, visualizar os atendimentos confirmados, consultar informações, preencher uma solicitação e continuar a conversa diretamente pelo WhatsApp.
+
+O site não deverá funcionar como e-commerce.
 
 ---
 
-# 65. ORDEM DE EXECUÇÃO
+## 65. ORDEM DE EXECUÇÃO
 
 Execute o projeto nesta ordem:
 
 ### FASE 1
 
-Analisar requisitos e definir arquitetura.
+Analisar requisitos, arquivos existentes, imagem de referência e definir arquitetura.
 
 ### FASE 2
 
@@ -1838,7 +2083,7 @@ Implementar Tailwind + CSS personalizado.
 
 ### FASE 5
 
-Criar e inserir imagens.
+Criar e inserir imagens coerentes com a identidade holística.
 
 ### FASE 6
 
@@ -1846,15 +2091,15 @@ Implementar JavaScript geral.
 
 ### FASE 7
 
-Implementar catálogo de serviços.
+Implementar catálogo informativo de atendimentos.
 
 ### FASE 8
 
-Implementar carrinho.
+Implementar filtros e busca, se necessários.
 
 ### FASE 9
 
-Implementar checkout.
+Implementar formulário e fluxo de solicitação de atendimento.
 
 ### FASE 10
 
@@ -1890,17 +2135,17 @@ Documentar no README.md.
 
 ---
 
-# 66. REGRA FINAL
+## 66. REGRA FINAL
 
 Não faça apenas uma demonstração visual.
 
-Construa o projeto como se ele fosse ser entregue para um cliente real.
+Construa o projeto como se ele fosse ser entregue para uma cliente real.
 
 Priorize:
 
 1. UX
 2. UI
-3. Conversão
+3. Clareza da comunicação
 4. Performance
 5. Responsividade
 6. Acessibilidade
@@ -1919,16 +2164,16 @@ CSS
 JavaScript
 Tailwind CSS
 APIs frontend/nativas
-LocalStorage
 ```
 
-O resultado deve ser visualmente sofisticado, funcional e pronto para receber os dados reais da clínica.
+O resultado deve ser visualmente sofisticado, funcional e pronto para receber os dados reais da terapeuta.
 
-```
+**REGRA DE PRESERVAÇÃO DO PROJETO:** antes de desenvolver, analise os arquivos existentes e a imagem de referência. Preserve a estrutura técnica definida, a paleta e os elementos visuais de referência que forem compatíveis com o novo objetivo. Remova integralmente referências a clínica de estética, beleza estética, procedimentos dermatológicos, laser, Botox, harmonização, cosméticos, carrinho, checkout comercial, marcas de estética e equipe fictícia. Não faça alterações fora do escopo sem necessidade.
 
-### Observação importante
+**REGRA DE CONTEÚDO E RESPONSABILIDADE:** não invente formação, certificações, registros, experiência, depoimentos, endereço, preços ou atendimentos. As modalidades sugeridas neste prompt são possibilidades de mercado, não serviços confirmados de Aureci Sena. Mantenha cada modalidade desativada até confirmação expressa da terapeuta. Não prometa cura, diagnóstico ou substituição de tratamentos médicos ou psicológicos.
 
-Eu estruturaria o projeto dessa forma porque o **catálogo + carrinho + checkout via WhatsApp** muda bastante a natureza do site. Ele deixa de ser apenas institucional e passa a ter uma pequena experiência de **e-commerce/agendamento**, mesmo sem processar pagamento online.
+**Observação importante**
 
-Também deixei **preços, WhatsApp, endereço, redes sociais, equipe e serviços centralizados em configuração/dados**, para que o agente não espalhe essas informações pelo HTML e você consiga trocar os dados da clínica posteriormente com facilidade.
-```
+A estrutura original de catálogo, carrinho e checkout foi convertida em catálogo informativo e solicitação de atendimento. O site continua oferecendo uma experiência organizada para conhecer as práticas e iniciar o agendamento, mas sem simular uma loja virtual ou confirmação automática de sessão.
+
+Os dados da terapeuta, WhatsApp, endereço, redes sociais, horários, biografia e atendimentos devem ficar centralizados em configurações para facilitar atualizações futuras.

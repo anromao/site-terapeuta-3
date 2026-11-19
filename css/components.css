@@ -1,0 +1,171 @@
+/* ============================================================
+   AURECI SENA — COMPONENTES DE INTERFACE CÓSMICOS
+   PALETA UNIVERSO: VERMELHO, PRETO & ROXO
+   ============================================================ */
+
+/* ── MODAIS & OVERLAYS ───────────────────────────────────────── */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(5, 2, 8, 0.82);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.modal-content {
+  background: linear-gradient(145deg, #160A23 0%, #0D0516 100%);
+  border: 1px solid rgba(255, 117, 151, 0.35);
+  border-radius: 1.75rem;
+  box-shadow: 0 25px 70px -10px rgba(0, 0, 0, 0.9), 0 0 40px rgba(209, 40, 69, 0.2);
+  width: 100%;
+  max-width: 36rem;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  color: #FDFBFF;
+  animation: modalSlideUp 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes modalSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* ── DRAWER DO MENU MOBILE ───────────────────────────────────── */
+#mobile-menu {
+  background: linear-gradient(180deg, #13071E 0%, #09030E 100%);
+  border-left: 1px solid rgba(255, 117, 151, 0.2);
+  box-shadow: -15px 0 50px rgba(0, 0, 0, 0.9);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+#mobile-menu-backdrop {
+  transition: opacity 0.3s ease;
+}
+
+/* ── FORMULÁRIO DE AGENDAMENTO ───────────────────────────────── */
+.form-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #FDFBFF;
+  margin-bottom: 0.35rem;
+}
+
+.form-input, .form-select, .form-textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 0.85rem;
+  border: 1px solid rgba(255, 117, 151, 0.22);
+  background-color: rgba(22, 10, 34, 0.85);
+  color: #FFFFFF;
+  font-size: 0.925rem;
+  font-family: inherit;
+  transition: all 0.2s ease;
+}
+
+.form-input::placeholder, .form-textarea::placeholder {
+  color: #8C7B9E;
+}
+
+.form-input:focus, .form-select:focus, .form-textarea:focus {
+  background-color: rgba(32, 15, 50, 0.95);
+  border-color: #FF7597;
+  box-shadow: 0 0 0 3px rgba(209, 40, 69, 0.25), 0 0 15px rgba(255, 117, 151, 0.2);
+  outline: none;
+}
+
+.form-select option {
+  background-color: #160A23;
+  color: #FFFFFF;
+}
+
+.form-helper {
+  font-size: 0.75rem;
+  color: #A698BF;
+  margin-top: 0.3rem;
+}
+
+.form-error {
+  font-size: 0.75rem;
+  color: #FF4D6D;
+  margin-top: 0.3rem;
+}
+
+/* ── HERO BANNER PATTERNS & GRADIENTES CÓSMICOS ──────────────── */
+.hero-gradient-overlay {
+  background: linear-gradient(
+    to right,
+    rgba(7, 3, 11, 0.96) 0%,
+    rgba(12, 6, 20, 0.88) 45%,
+    rgba(12, 6, 20, 0.45) 100%
+  );
+}
+
+@media (max-width: 1024px) {
+  .hero-gradient-overlay {
+    background: linear-gradient(
+      to bottom,
+      rgba(7, 3, 11, 0.95) 0%,
+      rgba(12, 6, 20, 0.82) 50%,
+      rgba(7, 3, 11, 0.96) 100%
+    );
+  }
+}
+
+/* ── BADGES & PILLS CÓSMICOS ─────────────────────────────────── */
+.badge-category {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background: linear-gradient(135deg, rgba(209, 40, 69, 0.25) 0%, rgba(142, 36, 170, 0.3) 100%);
+  color: #FFB3C6;
+  border: 1px solid rgba(255, 117, 151, 0.3);
+}
+
+.badge-outline {
+  border: 1px solid rgba(255, 117, 151, 0.2);
+  background: rgba(22, 10, 34, 0.5);
+  color: #E3D9F3;
+}
+
+/* ── BREADCRUMBS ─────────────────────────────────────────────── */
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: #A698BF;
+  margin-bottom: 1.5rem;
+}
+.breadcrumbs a {
+  color: #E3D9F3;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.breadcrumbs a:hover {
+  color: #FF7597;
+}
+.breadcrumbs span.current {
+  color: #FF7597;
+  font-weight: 500;
+}

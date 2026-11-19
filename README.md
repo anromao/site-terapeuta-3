@@ -1,185 +1,161 @@
-# Belle Skin & Wellness — Website Comercial & Catálogo Multi-Pages
+# Aureci Sena — Website Institucional & Catálogo de Cuidados Integrativos
 
-Website estático moderno, elegante e de alta conversão para clínica de estética avançada, dermatologia e bem-estar, com catálogo dinâmico de procedimentos, carrinho integrado com persistência local (LocalStorage), validação inteligente de dados com consulta automática de endereço por CEP (ViaCEP) e envio direto de solicitações estruturadas para o WhatsApp.
-
----
-
-## 🌟 Destaques & Funcionalidades
-
-- **Design Premium & Visual WOW**: Paleta refinada com tons off-white, nude, rosé e dourado suave, tipografia elegante (*Cormorant Garamond* e *Montserrat*), microinterações e transições fluidas.
-- **Arquitetura Multi-Pages Completa**:
-  - `index.html`: Home com Hero impactante, diferenciais, 5 categorias com imagens ilustrativas, tratamentos em destaque, visão da clínica, depoimentos com carrossel interativo, marcas parceiras com ticker infinito, FAQ sanfonado e localização.
-  - `sobre.html`: História, propósito, missão, visão e valores, pilares de excelência clínica e ambiente.
-  - `servicos.html`: Catálogo dinâmico com procedimentos, filtros rápidos por categoria, busca textual instantânea, ordenação por preço e ordem alfabética.
-  - `equipe.html`: Apresentação do corpo clínico multidisciplinar com foto, especialidades e registros (CRM/CRBM/CREFITO).
-  - `contato.html`: Formulário rápido via WhatsApp, telefones, horários de atendimento, endereço e mapa Google Maps embed.
-- **E-commerce & Carrinho de Atendimento**:
-  - Adição/remoção de procedimentos com controle de quantidade.
-  - Drawer lateral (*Cart Drawer*) com abertura suave e cálculo automático de valores em BRL (`Intl.NumberFormat`).
-  - Persistência total entre páginas via `LocalStorage`.
-- **Checkout & Integração WhatsApp**:
-  - Modal de checkout em etapas sem cobrança financeira direta (foco em agendamento e consultoria).
-  - Consulta automática de CEP via API pública **ViaCEP** preenchendo rua, bairro, cidade e estado.
-  - Validação de campos obrigatórios com mensagens inline amigáveis.
-  - Montagem de mensagem estruturada com emojis e redirecionamento seguro para a URL `wa.me/` com `encodeURIComponent()`.
-- **Configuração Centralizada**:
-  - Todos os dados institucionais (WhatsApp, telefone, e-mail, redes sociais, horários e endereço) centralizados em `js/config.js`.
-  - Dados dos serviços centralizados em `js/services-data.js`.
+Website multi-pages moderno, acolhedor e responsivo desenvolvido para a terapeuta holística **Aureci Sena**. O projeto combina apresentação da trajetória da profissional, catálogo informativo de práticas integrativas e fluxo de solicitação de atendimento integrado diretamente ao WhatsApp.
 
 ---
 
-## 🛠️ Tecnologias Utilizadas (Stack)
+## 🌌 Visão Geral do Projeto & Identidade Cósmica
 
-- **HTML5**: Semântico, acessível e otimizado para SEO.
-- **CSS3 Vanilla**: Design system com CSS Custom Properties (variáveis), Flexbox, CSS Grid, animações `@keyframes` e responsividade completa.
-- **JavaScript ES6+**: Manipulação do DOM, persistência em `LocalStorage`, integração assíncrona com `fetch` (ViaCEP API).
-- **Fontes & Ícones**: Google Fonts (*Cormorant Garamond*, *Montserrat*) e Font Awesome 6.
+O site foi concebido com uma identidade visual cósmica, serena e sofisticada, inspirada nas cores do universo:
+- **Tons Cósmicos:** Preto espacial (`#07030B`), Roxo nebulosa e Magenta astral (`#8E24AA`, `#A83279`, `#5C1363`), Vermelho e Rubi cósmico (`#D12845`, `#FF3366`, `#FF7597`).
+- **Ícones & Imagens Holísticas:** Ícones dedicados em SVG para cada prática (Reiki, Aromaterapia, Florais de Bach, Meditação Guiada, Respiração Consciente e Alinhamento dos Chacras) e imagem oficial do universo com anéis e nebulosas (`assets/images/bg-universe.jpg`).
+- **Natureza Institucional:** Não funciona como e-commerce ou clínica estética; é um espaço acolhedor, humano e sensível voltado ao reequilíbrio energético e ao autoconhecimento.
+
+### Principais Funcionalidades:
+- **Multi-pages Estruturado:**
+  - `index.html` (Página inicial: apresentação, hero impactante, pilares integrativos, atendimentos em destaque, como funciona uma sessão, FAQ e CTAs).
+  - `sobre.html` (Apresentação aprofundada de Aureci Sena, propósito, valores éticos e filosofia do cuidado holístico).
+  - `atendimentos.html` (Catálogo informativo de práticas com filtro por categorias, busca textual e ordenação alfabética).
+  - `contato.html` (Canais de contato, horários de atendimento, formulário inline e orientações geográficas).
+- **Catálogo Informativo & Modal "Saiba Mais":** Cada atendimento oferece explicação clara sobre os objetivos da prática, duração média, modalidades e formato.
+- **Fluxo de Solicitação com Modal/Drawer:** O visitante informa seus dados básicos, preferências de dia e período, revisa um resumo e é direcionado ao WhatsApp com mensagem estruturada.
+- **Configuração Centralizada:** Todas as informações de contato, horários, redes sociais e textos da terapeuta estão em um único arquivo (`js/config.js`).
+- **Acessibilidade & Responsividade:** Compatível com leitores de tela, navegação por teclado (ESC para fechar modais, foco visível) e suporte a `prefers-reduced-motion`.
 
 ---
 
-## 📋 Pré-requisitos
+## 🛠️ Tecnologias Utilizadas
 
-Por ser uma aplicação web estática baseada em padrões web abertos (HTML/CSS/JS), **não há necessidade de compilação ou instalação de runtime obrigatório**.
-- Qualquer navegador moderno (Google Chrome, Mozilla Firefox, Microsoft Edge, Safari).
-- (Opcional) Node.js, Python ou extensão *Live Server* do VS Code para servir localmente via HTTP.
+- **HTML5 Semântico:** Estrutura clara, acessível e otimizada para SEO.
+- **CSS3 Moderno + Tailwind CSS:** Design system com CSS Variables e estilização utilitária refinada.
+- **JavaScript Moderno (ES6+):** Código modular sem dependência de frameworks pesados ou backend.
+- **Google Fonts:** `Cormorant Garamond` (títulos clássicos e elegantes) e `Manrope` (leitura fluida e confortável).
+- **SVG & Assets Otimizados:** Ícones vetoriais leves e imagens editoriais de alta resolução.
 
 ---
 
-## 📂 Estrutura do Projeto
+## 📁 Estrutura de Diretórios
 
 ```text
-.
-├── index.html                  # Página principal (Home de alta conversão)
-├── sobre.html                  # História, missão, visão e valores
-├── servicos.html               # Catálogo dinâmico com carrinho
-├── equipe.html                 # Apresentação do corpo clínico
-├── contato.html                # Informações, formulário e mapa
+/
+├── index.html                   # Página Inicial
+├── sobre.html                   # Apresentação e Trajetória de Aureci Sena
+├── atendimentos.html            # Catálogo de Práticas Integrativas
+├── contato.html                 # Canais de Atendimento e Formulário
+├── favicon.svg                  # Ícone da aba do navegador
+├── README.md                    # Documentação do projeto
 │
 ├── assets/
-│   ├── images/
-│   │   ├── hero-main.jpg       # Imagem principal do Hero
-│   │   ├── category-laser.jpg  # Categoria Laser
-│   │   ├── category-facial.jpg # Categoria Facial
-│   │   ├── category-corporal.jpg # Categoria Corporal
-│   │   ├── category-harmonizacao.jpg # Categoria Harmonização
-│   │   └── category-bemestar.jpg # Categoria Bem-estar
-│   ├── icons/
-│   └── logos/
+│   ├── images/                  # Fotografias editoriais do espaço e terapias
+│   │   ├── hero-holistic.jpg
+│   │   ├── therapist-portrait.jpg
+│   │   ├── terapia-energia.jpg
+│   │   ├── terapia-aromaterapia.jpg
+│   │   ├── terapia-relaxamento.jpg
+│   │   └── terapia-autoconhecimento.jpg
+│   ├── icons/                   # Ícones complementares
+│   └── logos/                   # Logotipo e símbolo em SVG
 │
 ├── css/
-│   └── styles.css              # Design system completo e estilos responsivos
+│   ├── styles.css               # Design tokens, variáveis, base e animações
+│   └── components.css           # Estilos de modais, drawers e formulários
 │
-├── js/
-│   ├── config.js               # Configuração central da clínica
-│   ├── services-data.js        # Lista de procedimentos e preços
-│   ├── services.js             # Renderização, busca e filtros do catálogo
-│   ├── cart.js                 # Lógica do carrinho, LocalStorage e drawer
-│   ├── checkout.js             # Validação, ViaCEP e modal de finalização
-│   ├── whatsapp.js             # Formatação da mensagem e envio wa.me
-│   └── main.js                 # Header, menu mobile, scroll reveal, FAQ e carrossel
-│
-├── .gitignore                  # Arquivos e pastas ignorados pelo Git
-└── README.md                   # Documentação do projeto
+└── js/
+    ├── config.js                # Configuração central da terapeuta (dados e contato)
+    ├── therapies.js             # Base de dados, filtros e renderização dos atendimentos
+    ├── appointment.js           # Gerenciador do modal de agendamento e validação
+    ├── whatsapp.js              # Serviço de montagem e envio da mensagem para WhatsApp
+    └── main.js                  # Controle global: scroll, header, menu mobile e FAQ
 ```
 
 ---
 
-## 🚀 Como Executar em Desenvolvimento
+## 🚀 Como Executar o Projeto Localmente
 
-Basta abrir qualquer um dos arquivos `.html` no seu navegador ou utilizar um servidor local leve:
+Por se tratar de uma aplicação frontend 100% estática, não há necessidade de compilação, Node.js ou instalação de pacotes:
 
-### Opção 1: VS Code Live Server
-1. Abra o projeto no VS Code.
-2. Clique com o botão direito em `index.html` e selecione **"Open with Live Server"**.
-
-### Opção 2: Python HTTP Server
-```bash
-python -m http.server 3000
-```
-Acesse no navegador: `http://localhost:3000`
-
-### Opção 3: Node `npx serve`
-```bash
-npx -y serve .
-```
+1. **Abrir diretamente:** Basta abrir o arquivo `index.html` em qualquer navegador web (Google Chrome, Edge, Firefox, Safari).
+2. **Utilizando servidor local (opcional/recomendado para testes):**
+   - No VS Code, clique com o botão direito em `index.html` e selecione **Open with Live Server**.
+   - Ou via terminal com Python: `python -m http.server 8000` e acesse `http://localhost:8000`.
 
 ---
 
-## 🧪 Testes e Validação
+## ⚙️ Guia de Customização e Atualização
 
-Para validar o funcionamento do projeto:
-1. **Navegação**: Verifique a transição entre todas as páginas (`index.html`, `sobre.html`, `servicos.html`, `equipe.html`, `contato.html`).
-2. **Catálogo & Filtros**: Em `servicos.html`, teste os filtros por categoria (Facial, Corporal, Laser, etc.) e o campo de busca em tempo real.
-3. **Fluxo do Carrinho**: Adicione serviços ao carrinho, altere quantidades e verifique a persistência ao recarregar a página ou navegar para outra aba.
-4. **Checkout & CEP**: Abra o checkout, preencha um CEP válido (ex: `01310-100`) e confirme o preenchimento automático do endereço via ViaCEP.
-5. **WhatsApp**: Finalize a solicitação e confira se a mensagem pré-formatada é gerada corretamente com os itens selecionados.
-
----
-
-## ⚙️ Personalização dos Dados da Clínica
-
-Para alterar o telefone, WhatsApp ou endereço da clínica, edite o arquivo [`js/config.js`](js/config.js):
-
+### 1. Como alterar o número do WhatsApp
+Abra o arquivo `js/config.js` e localize a linha `whatsapp`:
 ```javascript
-const clinicConfig = {
-  name: "Belle Skin & Wellness",
-  tagline: "Estética · Beleza · Bem-estar",
-  whatsapp: "5511989603385", // Formato: 55 + DDD + Número (sem caracteres especiais)
-  phone: "(11) 98960-3385",
-  email: "contato@belleskin.com.br",
-  address: "Rua Conde das Galveias, 27",
-  city: "São Paulo",
-  state: "SP",
-  cep: "04125-000",
-  instagram: "https://instagram.com/belleskin",
-  facebook: "https://facebook.com/belleskin",
-  openingHours: {
-    weekdays: "Segunda a Sexta: 09:00 — 19:00",
-    saturday: "Sábado: 09:00 — 14:00"
-  }
+const therapistConfig = {
+    // Insira apenas números: código do país (55) + DDD (2 dígitos) + número
+    whatsapp: "5511999999999", 
+    phoneFormatted: "(11) 99999-9999",
+    ...
 };
 ```
+> **Nota:** Se deixado vazio (`""`), o sistema informará de forma amigável que o canal está em configuração e orientará o usuário a usar os outros canais disponíveis.
 
----
-
-## 💆‍♀️ Como Adicionar ou Alterar Serviços
-
-Abra o arquivo [`js/services-data.js`](js/services-data.js) e insira ou modifique os procedimentos no array `servicesData`:
-
+### 2. Como alterar dados de contato, horários e redes sociais
+No mesmo arquivo `js/config.js`, edite os campos desejados:
 ```javascript
-{
-  id: 16,
-  category: "facial",
-  categoryLabel: "Facial",
-  name: "Novo Procedimento Glow",
-  description: "Descrição do procedimento...",
-  price: 299.90,
-  image: "assets/images/category-facial.jpg",
-  duration: "50 min",
-  sessions: "Sessão única",
-  featured: true
+email: "seuemail@aurecisena.com.br",
+city: "São Paulo",
+state: "SP",
+
+openingHours: {
+    weekdays: "Segunda a Sexta: 09h às 19h",
+    saturday: "Sábados: 09h às 13h (conforme agenda)",
+    sunday: "Fechado"
+},
+
+social: {
+    instagram: "https://instagram.com/seu.perfil",
+    facebook: "" // Deixe "" para ocultar o ícone automaticamente
 }
 ```
 
+### 3. Como ativar, desativar ou adicionar um atendimento
+Abra o arquivo `js/therapies.js`. Cada atendimento possui um objeto com suas propriedades:
+- Para **ativar** uma modalidade já confirmada: defina `active: true` e `confirmedByTherapist: true`.
+- Para **desativar temporariamente** uma modalidade: defina `active: false`.
+```javascript
+{
+    id: 1,
+    slug: "reiki-harmonizacao",
+    category: "equilibrio-energetico",
+    categoryName: "Equilíbrio Energético",
+    name: "Reiki & Harmonização Energética",
+    shortDescription: "Canalização suave de energia vital...",
+    duration: "50 a 60 minutos",
+    modalities: ["Online", "Presencial"],
+    price: null, // Deixe null para exibir 'Consulte informações'
+    active: true,
+    confirmedByTherapist: true
+}
+```
+
+### 4. Como substituir fotografias e imagens
+Basta substituir os arquivos na pasta `assets/images/` mantendo as dimensões e nomes de arquivo recomendados:
+- `hero-holistic.jpg`: Imagem ampla (16:9) do espaço de acolhimento.
+- `therapist-portrait.jpg`: Foto da terapeuta (proporção 4:5 ou retrato).
+- `terapia-*.jpg`: Imagens temáticas de cada modalidade integrativa.
+
 ---
 
-## 🌐 Deploy em Produção
+## 🌐 Como Publicar (Deploy)
 
-O projeto pode ser publicado diretamente e gratuitamente em plataformas de hospedagem estática:
-
-- **GitHub Pages**: Vá em *Settings > Pages* no repositório GitHub e selecione a branch `main` / `root`.
-- **Vercel**: Conecte o repositório no dashboard da Vercel (Framework Preset: *Other*).
-- **Netlify**: Arraste a pasta do projeto ou conecte via Git (Publish directory: `.`).
-
----
-
-## 📱 Responsividade
-
-Totalmente adaptado para:
-- 📱 Smartphones (320px, 375px, 390px, 414px)
-- 📱 Tablets (768px, 1024px)
-- 💻 Notebooks e Desktops (1280px, 1440px, 1920px+)
+Como o projeto é estático, a publicação é simples e gratuita em qualquer serviço de hospedagem estática:
+1. **GitHub Pages:**
+   - Faça push dos arquivos para seu repositório no GitHub.
+   - Acesse **Settings** > **Pages** e selecione a branch `main` e a pasta `/ (root)`.
+2. **Vercel / Netlify:**
+   - Arraste a pasta do projeto diretamente para o painel de deploy do Netlify ou conecte com seu repositório no GitHub na Vercel. Não há necessidade de build command nem output directory.
 
 ---
 
-© 2026 Belle Skin & Wellness. Todos os direitos reservados.
+## ⚖️ Conformidade e Responsabilidade Ética
+
+O website respeita rigorosamente as diretrizes éticas para terapeutas holísticos e integrativos:
+- Não contém promessas de cura ou diagnósticos milagrosos.
+- Exibe de forma transparente que as práticas integrativas são complementares e não substituem tratamentos médicos ou psicológicos convencionais.
+- Respeita a privacidade dos interagentes, não coletando dados clínicos em formulários públicos.

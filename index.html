@@ -1,847 +1,1183 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Belle Skin & Wellness — Clínica de Estética, Beleza e Bem-Estar</title>
-  <meta name="description"
-    content="Clínica de estética avançada, dermatologia e bem-estar. Tratamentos faciais, corporais, depilação a laser e harmonização com tecnologia e atendimento exclusivo.">
-  <meta name="keywords"
-    content="clínica de estética, botox, harmonização facial, depilação a laser, limpeza de pele, drenagem linfática, bem-estar, estética avançada">
+  <title>Aureci Sena | Terapeuta Holística & Cuidados Integrativos</title>
+  <meta name="description" content="Espaço de acolhimento cósmico, equilíbrio e autoconhecimento com a terapeuta holística Aureci Sena. Reiki, Aromaterapia, Meditação e Práticas Integrativas.">
+  <meta name="keywords" content="terapeuta holistica, reiki, aromaterapia, florais de bach, meditacao guiada, bem estar, autoconhecimento, equilibrio emocional, universo, aureci sena">
+  <meta name="author" content="Aureci Sena">
   <meta name="robots" content="index, follow">
 
-  <!-- Open Graph / Redes Sociais -->
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <!-- Open Graph / Meta Compartilhamento -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Belle Skin & Wellness — Clínica de Estética e Bem-Estar">
-  <meta property="og:description"
-    content="Realce sua beleza natural com tratamentos de alta tecnologia e atendimento personalizado.">
-  <meta property="og:image" content="assets/images/hero-main.jpg">
+  <meta property="og:title" content="Aureci Sena | Terapeuta Holística & Cuidados Integrativos">
+  <meta property="og:description" content="Um caminho de cuidado, equilíbrio e reconexão com a sua essência através de práticas terapêuticas integrativas e energéticas.">
+  <meta property="og:image" content="assets/images/bg-universe.jpg">
+  <meta property="og:url" content="https://aurecisena.com.br/">
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet">
+  <!-- Tailwind CSS via CDN com personalização Cósmica -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cosmos: {
+              950: '#07030B',
+              900: '#0C0614',
+              850: '#13071E',
+              800: '#180A26',
+              700: '#230E36',
+            },
+            crimson: {
+              300: '#FFB3C6',
+              400: '#FF7597',
+              500: '#FF3366',
+              600: '#D12845',
+              700: '#A81C36',
+              800: '#750B20',
+              900: '#4D0513',
+            },
+            astral: {
+              200: '#E9D5FF',
+              300: '#D8B4FE',
+              400: '#C084FC',
+              500: '#A855F7',
+              600: '#8E24AA',
+              700: '#7B1FA2',
+              800: '#5C1363',
+              900: '#38093E',
+            }
+          },
+          fontFamily: {
+            serif: ['Cormorant Garamond', 'Georgia', 'serif'],
+            sans: ['Manrope', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
 
-  <!-- CSS -->
+  <!-- Estilos Customizados e Componentes Cósmicos -->
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/components.css">
 </head>
+<body class="bg-[#07030B] text-[#FDFBFF] font-sans antialiased flex flex-col min-h-screen selection:bg-crimson-600 selection:text-white">
 
-<body class="page-home">
-
-  <!-- ── HEADER ─────────────────────────────────────────────── -->
-  <header class="header" id="site-header">
-    <div class="container header-container">
-      <!-- Logo -->
-      <a href="index.html" class="logo" aria-label="Belle Skin & Wellness - Home">
-        <span class="logo-mark">✨</span>
-        <span class="logo-text">Belle Skin <em>& Wellness</em></span>
-      </a>
-
-      <!-- Desktop Nav -->
-      <nav class="desktop-nav" aria-label="Navegação Principal">
-        <a href="index.html" class="nav-link active">Home</a>
-        <a href="sobre.html" class="nav-link">Sobre</a>
-        <a href="servicos.html" class="nav-link">Serviços</a>
-        <a href="equipe.html" class="nav-link">Equipe</a>
-        <a href="contato.html" class="nav-link">Contato</a>
-      </nav>
-
-      <!-- Header Actions -->
-      <div class="header-actions">
-        <!-- Carrinho -->
-        <button class="cart-btn" id="btn-cart-toggle" aria-label="Abrir carrinho de compras">
-          <svg class="cart-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
-            <line x1="3" y1="6" x2="21" y2="6"></line>
-            <path d="M16 10a4 4 0 0 1-8 0"></path>
-          </svg>
-          <span class="cart-count">0</span>
-        </button>
-
-        <!-- CTA Agendar -->
-        <a href="servicos.html" class="btn btn-primary btn-sm header-cta">
-          Agendar Atendimento
+  <!-- ============================================================
+       HEADER PRINCIPAL CÓSMICO
+       ============================================================ -->
+  <header id="main-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between">
+        
+        <!-- Logotipo / Identificação com Ícone Cósmico -->
+        <a href="index.html" class="flex items-center gap-3 group focus:outline-none">
+          <div class="w-10 h-10 rounded-full p-1 bg-gradient-to-tr from-crimson-600 via-astral-600 to-crimson-400 shadow-[0_0_18px_rgba(209,40,69,0.5)]">
+            <img src="assets/logos/logo-aureci-sena.svg" alt="Aureci Sena" class="w-full h-full object-contain" />
+          </div>
+          <div class="flex flex-col">
+            <span class="font-serif text-2xl sm:text-3xl font-semibold tracking-tight text-white group-hover:text-crimson-400 transition-colors">
+              Aureci Sena
+            </span>
+            <span class="text-[10px] sm:text-xs tracking-widest uppercase font-medium text-crimson-400 -mt-1">
+              Terapeuta Holística
+            </span>
+          </div>
         </a>
 
-        <!-- Hamburger Mobile -->
-        <button class="menu-btn" aria-label="Abrir menu" aria-expanded="false">
-          <span class="menu-btn-bar"></span>
-          <span class="menu-btn-bar"></span>
-          <span class="menu-btn-bar"></span>
+        <!-- Navegação Desktop -->
+        <nav class="hidden md:flex items-center gap-8" aria-label="Navegação Principal">
+          <a href="index.html" class="nav-link text-sm font-medium transition-colors hover:text-crimson-400">Home</a>
+          <a href="sobre.html" class="nav-link text-sm font-medium transition-colors hover:text-crimson-400">Sobre</a>
+          <a href="atendimentos.html" class="nav-link text-sm font-medium transition-colors hover:text-crimson-400">Atendimentos</a>
+          <a href="#como-funciona" class="nav-link text-sm font-medium transition-colors hover:text-crimson-400">Como funciona</a>
+          <a href="contato.html" class="nav-link text-sm font-medium transition-colors hover:text-crimson-400">Contato</a>
+        </nav>
+
+        <!-- CTA Agendamento Header -->
+        <div class="hidden md:flex items-center gap-4">
+          <button 
+            type="button" 
+            onclick="openAppointmentModal()"
+            class="inline-flex items-center justify-center px-6 py-2.5 rounded-full text-xs sm:text-sm font-medium btn-cosmos-primary"
+          >
+            Agendar Sessão
+          </button>
+        </div>
+
+        <!-- Botão Menu Mobile (Hamburger) -->
+        <button 
+          id="mobile-menu-toggle" 
+          type="button"
+          class="md:hidden p-2 rounded-xl text-purple-200 hover:text-white hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-crimson-500"
+          aria-label="Abrir menu de navegação"
+          aria-expanded="false"
+        >
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
         </button>
+
       </div>
     </div>
   </header>
 
-  <!-- ── MENU MOBILE ────────────────────────────────────────── -->
-  <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
-    <nav class="mobile-nav-links" aria-label="Menu Mobile">
-      <a href="index.html" class="mobile-nav-link active">Home</a>
-      <a href="sobre.html" class="mobile-nav-link">Sobre</a>
-      <a href="servicos.html" class="mobile-nav-link">Serviços</a>
-      <a href="equipe.html" class="mobile-nav-link">Equipe</a>
-      <a href="contato.html" class="mobile-nav-link">Contato</a>
-      <a href="servicos.html" class="btn btn-primary mobile-nav-cta">Agendar Atendimento</a>
-    </nav>
-    <div class="mobile-nav-footer">
-      <p class="mobile-nav-phone" data-clinic-phone>(11) 98960-3385</p>
-      <p class="mobile-nav-address" data-clinic-address>Rua Conde das Galveias, 27, SP</p>
+  <!-- Overlay & Menu Drawer Mobile -->
+  <div id="mobile-menu-backdrop" class="fixed inset-0 bg-black/70 backdrop-blur-md z-50 hidden opacity-0 transition-opacity"></div>
+  <div id="mobile-menu" class="fixed top-0 right-0 bottom-0 w-80 max-w-[85vw] z-50 shadow-2xl p-6 flex flex-col justify-between translate-x-full transition-transform">
+    <div>
+      <div class="flex items-center justify-between pb-6 border-b border-pink-500/20">
+        <div class="flex items-center gap-3">
+          <img src="assets/logos/logo-aureci-sena.svg" alt="" class="w-8 h-8"/>
+          <div>
+            <span class="font-serif text-2xl font-semibold text-white">Aureci Sena</span>
+            <span class="block text-[11px] uppercase tracking-wider text-crimson-400">Terapeuta Holística</span>
+          </div>
+        </div>
+        <button 
+          id="mobile-menu-close" 
+          type="button"
+          class="p-2 rounded-full text-purple-300 hover:text-white hover:bg-white/10"
+          aria-label="Fechar menu"
+        >
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <nav class="flex flex-col gap-5 pt-8" aria-label="Navegação Mobile">
+        <a href="index.html" class="text-base font-medium text-purple-100 hover:text-crimson-400 py-1 flex items-center gap-2">
+          <span>Home</span>
+        </a>
+        <a href="sobre.html" class="text-base font-medium text-purple-100 hover:text-crimson-400 py-1">Sobre Aureci</a>
+        <a href="atendimentos.html" class="text-base font-medium text-purple-100 hover:text-crimson-400 py-1">Atendimentos</a>
+        <a href="#como-funciona" class="text-base font-medium text-purple-100 hover:text-crimson-400 py-1">Como Funciona</a>
+        <a href="contato.html" class="text-base font-medium text-purple-100 hover:text-crimson-400 py-1">Contato & Dúvidas</a>
+      </nav>
+    </div>
+
+    <div class="pt-6 border-t border-pink-500/20">
+      <button 
+        type="button" 
+        onclick="openAppointmentModal()"
+        class="w-full py-3 px-4 rounded-full text-sm font-medium btn-cosmos-primary text-center"
+      >
+        Solicitar Atendimento
+      </button>
+      <p class="text-xs text-purple-300 text-center mt-3 font-light">
+        Acolhimento energético e individualizado
+      </p>
     </div>
   </div>
 
-  <!-- ── HERO SECTION ───────────────────────────────────────── -->
-  <section class="hero" id="hero">
-    <div class="hero-bg" style="background-image: url('assets/images/hero-main.jpg');"></div>
-    <div class="hero-overlay"></div>
-    <div class="container hero-content">
-      <span class="text-eyebrow hero-eyebrow">BELEZA • CUIDADO • BEM-ESTAR</span>
-      <h1 class="hero-title">Realce sua beleza natural com exclusividade e ciência.</h1>
-      <p class="hero-desc">
-        Tratamentos estéticos de alta precisão desenvolvidos para proporcionar bem-estar, rejuvenescimento e harmonia em
-        cada detalhe.
-      </p>
-      <div class="hero-actions">
-        <a href="servicos.html" class="btn btn-primary btn-lg">
-          Agendar Atendimento
-        </a>
-        <a href="#categorias" class="btn btn-outline-white btn-lg">
-          Conhecer Tratamentos
-        </a>
-      </div>
-    </div>
-    <div class="hero-scroll" role="button" aria-label="Rolar para próxima seção">
-      <span class="hero-scroll-text">Descubra mais</span>
-      <span class="hero-scroll-arrow">↓</span>
-    </div>
-  </section>
+  <main class="flex-grow">
 
-  <!-- ── DIFERENCIAIS / BENEFÍCIOS ──────────────────────────── -->
-  <section class="section bg-cream" id="diferenciais">
-    <div class="container">
-      <div class="features-grid">
-        <div class="feature-card reveal">
-          <div class="feature-icon">✨</div>
-          <h3 class="feature-title">Tecnologia Avançada</h3>
-          <p class="feature-desc">Equipamentos médicos certificados internacionalmente e protocolos com eficácia clínica
-            comprovada.</p>
-        </div>
-        <div class="feature-card reveal">
-          <div class="feature-icon">🌸</div>
-          <h3 class="feature-title">Atendimento Personalizado</h3>
-          <p class="feature-desc">Avaliação minuciosa para criar um plano de tratamento exclusivo e adaptado às
-            necessidades da sua pele.</p>
-        </div>
-        <div class="feature-card reveal">
-          <div class="feature-icon">👩‍⚕️</div>
-          <h3 class="feature-title">Especialistas Renomados</h3>
-          <p class="feature-desc">Corpo clínico qualificado com formação continuada e foco inegociável na sua segurança
-            e satisfação.</p>
-        </div>
-        <div class="feature-card reveal">
-          <div class="feature-icon">🌿</div>
-          <h3 class="feature-title">Ambiente de Bem-Estar</h3>
-          <p class="feature-desc">Espaço relaxante e sofisticado concebido para transformar cada visita em uma
-            experiência de autocuidado.</p>
+    <!-- ============================================================
+         HERO SECTION CÓSMICO (UNIVERSO: VERMELHO, PRETO & ROXO)
+         ============================================================ -->
+    <section class="relative min-h-[95vh] flex items-center pt-28 pb-20 overflow-hidden">
+      <!-- Imagem de Fundo Universo Oficial com Brilho Cósmico -->
+      <div class="absolute inset-0 z-0">
+        <img 
+          src="assets/images/bg-universe.jpg" 
+          alt="Universo cósmico em tons de vermelho, preto e roxo com nebulosa e anéis orbitais" 
+          class="w-full h-full object-cover object-center scale-105 filter brightness-90"
+        />
+        <div class="absolute inset-0 hero-gradient-overlay"></div>
+      </div>
+
+      <!-- Anéis Cósmicos Decorativos Sutis -->
+      <div class="absolute -top-20 -right-20 w-96 h-96 rounded-full border border-crimson-600/20 pointer-events-none animate-pulse"></div>
+      <div class="absolute top-1/3 -right-40 w-[600px] h-[600px] rounded-full border border-astral-500/15 pointer-events-none"></div>
+
+      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div class="max-w-2xl">
+          
+          <!-- Eyebrow Cósmico com Ícone Holístico -->
+          <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-crimson-900/40 border border-crimson-500/40 text-crimson-300 text-xs font-semibold tracking-wider uppercase mb-6 backdrop-blur-md shadow-[0_0_15px_rgba(209,40,69,0.3)] reveal-on-scroll">
+            <span class="w-2 h-2 rounded-full bg-crimson-500 animate-ping"></span>
+            Acolhimento • Equilíbrio Cósmico • Autoconhecimento
+          </div>
+
+          <!-- Headline Principal com Gradiente Cósmico -->
+          <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl text-white leading-[1.12] mb-6 reveal-on-scroll reveal-delay-1">
+            Reconecte sua energia vital ao <span class="text-gradient-cosmos">ritmo do universo</span>.
+          </h1>
+
+          <!-- Descrição Acolhedora e Sensível -->
+          <p class="text-purple-200 text-base sm:text-lg leading-relaxed mb-8 font-light reveal-on-scroll reveal-delay-2">
+            Em um mundo acelerado, sua mente e seu corpo necessitam de um refúgio de paz e alinhamento bioenergético. Com práticas terapêuticas integrativas, acolho sua trajetória para restaurar o fluxo sutil de vitalidade, leveza e serenidade.
+          </p>
+
+          <!-- Ações / CTAs do Hero -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 reveal-on-scroll reveal-delay-3">
+            <button 
+              type="button" 
+              onclick="openAppointmentModal()"
+              class="inline-flex items-center justify-center px-8 py-3.5 rounded-full text-sm font-medium btn-cosmos-primary"
+            >
+              Agendar uma conversa
+            </button>
+            <a 
+              href="atendimentos.html" 
+              class="inline-flex items-center justify-center px-8 py-3.5 rounded-full text-sm font-medium btn-cosmos-secondary"
+            >
+              Conhecer os atendimentos
+            </a>
+          </div>
+
+          <!-- Selos Holísticos Cósmicos -->
+          <div class="mt-12 pt-6 border-t border-purple-900/50 flex flex-wrap items-center gap-6 text-xs text-purple-300 reveal-on-scroll reveal-delay-4">
+            <div class="flex items-center gap-2">
+              <img src="assets/icons/icon-reiki.svg" alt="" class="w-4 h-4"/>
+              <span>Alinhamento Energético & Reiki</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <img src="assets/icons/icon-aromaterapia.svg" alt="" class="w-4 h-4"/>
+              <span>Aromaterapia & Florais Sutis</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <img src="assets/icons/icon-meditacao.svg" alt="" class="w-4 h-4"/>
+              <span>Sessões Online & Presencial</span>
+            </div>
+          </div>
+
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ── CATEGORIAS DE SERVIÇOS ─────────────────────────────── -->
-  <section class="section" id="categorias">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="text-eyebrow">Nossas Especialidades</span>
-        <h2 class="section-title">Soluções completas para seu cuidado</h2>
-        <div class="divider"></div>
-        <p class="section-subtitle">
-          Explore nossos protocolos integrados que combinam alta tecnologia, estética moderna e máximo conforto.
+    <!-- ============================================================
+         MENSAGEM DE ACOLHIMENTO & FILOSOFIA CÓSMICA
+         ============================================================ -->
+    <section class="py-20 lg:py-24 bg-gradient-to-b from-[#0C0614] via-[#13071E] to-[#0C0614] border-y border-pink-500/15 relative overflow-hidden">
+      <!-- Brilho de Fundo -->
+      <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(209,40,69,0.08),transparent_60%)] pointer-events-none"></div>
+
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+        
+        <div class="w-14 h-14 mx-auto mb-6 rounded-2xl bg-gradient-to-br from-crimson-600 to-astral-700 p-2.5 shadow-[0_0_25px_rgba(209,40,69,0.4)] flex items-center justify-center reveal-on-scroll">
+          <img src="assets/icons/icon-chakras.svg" alt="Harmonia Cósmica" class="w-full h-full object-contain" />
+        </div>
+
+        <span class="text-xs uppercase tracking-widest font-semibold text-crimson-400 mb-3 block reveal-on-scroll">
+          Filosofia de Cuidado & Conexão
+        </span>
+
+        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-white leading-snug mb-8 reveal-on-scroll reveal-delay-1">
+          "Assim como o cosmos se equilibra no silêncio entre as estrelas, o nosso ser encontra sua cura quando nos permitimos silenciar, respirar e acolher a nossa essência."
+        </h2>
+
+        <p class="text-purple-200 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto font-light reveal-on-scroll reveal-delay-2">
+          Meu propósito é guiar você em direção a esse ponto de harmonia. Através da escuta atenta e de técnicas integrativas consagradas, abrimos espaço para que sua própria energia vital restaure a paz interior e a clareza mental.
         </p>
+
+        <div class="mt-8 pt-6 flex justify-center items-center gap-3 reveal-on-scroll reveal-delay-3">
+          <span class="h-px w-10 bg-crimson-500/40"></span>
+          <span class="font-serif text-lg font-medium text-pink-300">Aureci Sena</span>
+          <span class="h-px w-10 bg-crimson-500/40"></span>
+        </div>
+
       </div>
+    </section>
 
-      <div class="categories-grid">
-        <!-- Laser -->
-        <article class="category-card reveal">
-          <div class="category-card-img">
-            <img src="assets/images/category-laser.jpg" alt="Tratamentos a Laser e Depilação" loading="lazy">
-          </div>
-          <div class="category-card-content">
-            <span class="category-badge">Laser & Tecnologia</span>
-            <h3 class="category-title">Laser & Fototerapia</h3>
-            <p class="category-desc">Depilação a laser de alta performance e rejuvenescimento para todos os tipos de
-              pele.</p>
-            <a href="servicos.html" class="category-link">Ver tratamentos →</a>
-          </div>
-        </article>
+    <!-- ============================================================
+         OS 4 PILARES DO CUIDADO INTEGRATIVO COM ÍCONES HOLÍSTICOS
+         ============================================================ -->
+    <section class="py-20 lg:py-28 bg-[#07030B] relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <span class="text-xs uppercase tracking-widest font-semibold text-crimson-400 mb-2 block">
+            Dimensões do Equilíbrio
+          </span>
+          <h2 class="font-serif text-3xl sm:text-4xl text-white mb-4">
+            Cuidado que harmoniza todo o seu ser
+          </h2>
+          <p class="text-purple-200 text-sm sm:text-base font-light">
+            Somos um campo vivo de energia, mente, corpo e respiração. Nossas práticas dialogam com cada uma dessas esferas.
+          </p>
+        </div>
 
-        <!-- Facial -->
-        <article class="category-card reveal">
-          <div class="category-card-img">
-            <img src="assets/images/category-facial.jpg" alt="Estética Facial e Skincare" loading="lazy">
-          </div>
-          <div class="category-card-content">
-            <span class="category-badge">Rosto & Pele</span>
-            <h3 class="category-title">Estética Facial</h3>
-            <p class="category-desc">Limpeza de pele profunda, peelings químicos, microagulhamento e revitalização
-              celular.</p>
-            <a href="servicos.html" class="category-link">Ver tratamentos →</a>
-          </div>
-        </article>
-
-        <!-- Corporal -->
-        <article class="category-card reveal">
-          <div class="category-card-img">
-            <img src="assets/images/category-corporal.jpg" alt="Tratamentos Corporais e Drenagem" loading="lazy">
-          </div>
-          <div class="category-card-content">
-            <span class="category-badge">Corpo & Silhueta</span>
-            <h3 class="category-title">Estética Corporal</h3>
-            <p class="category-desc">Protocolos para gordura localizada, celulite, flacidez e retenção com resultados
-              visíveis.</p>
-            <a href="servicos.html" class="category-link">Ver tratamentos →</a>
-          </div>
-        </article>
-
-        <!-- Harmonização -->
-        <article class="category-card reveal">
-          <div class="category-card-img">
-            <img src="assets/images/category-harmonizacao.jpg" alt="Harmonização Facial e Botox" loading="lazy">
-          </div>
-          <div class="category-card-content">
-            <span class="category-badge">Harmonia & Rejuvenescimento</span>
-            <h3 class="category-title">Harmonização Facial</h3>
-            <p class="category-desc">Toxina botulínica, preenchimentos de alta precisão e bioestimuladores de colágeno.
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          
+          <!-- Pilar 1: Bioenergia / Reiki -->
+          <div class="bg-[#150921]/80 p-8 rounded-3xl border border-pink-500/20 shadow-card hover:border-pink-500/50 hover:shadow-[0_0_30px_rgba(209,40,69,0.3)] transition-all duration-300 reveal-on-scroll group">
+            <div class="w-14 h-14 rounded-2xl bg-[#230E36] p-2.5 mb-6 border border-pink-500/30 group-hover:scale-110 transition-transform">
+              <img src="assets/icons/icon-reiki.svg" alt="Harmonia Energética" class="w-full h-full object-contain" />
+            </div>
+            <h3 class="font-serif text-2xl text-white mb-3 group-hover:text-pink-300 transition-colors">Harmonia Energética</h3>
+            <p class="text-purple-200 text-sm leading-relaxed font-light">
+              Desbloqueio de fluxos vitais e alinhamento dos chacras através do Reiki, aliviando sobrecargas e devolvendo serenidade cósmica.
             </p>
-            <a href="servicos.html" class="category-link">Ver tratamentos →</a>
           </div>
-        </article>
 
-        <!-- Bem-Estar -->
-        <article class="category-card reveal">
-          <div class="category-card-img">
-            <img src="assets/images/category-bemestar.jpg" alt="Massagens e Spa Relaxante" loading="lazy">
+          <!-- Pilar 2: Terapia Floral & Emoções -->
+          <div class="bg-[#150921]/80 p-8 rounded-3xl border border-pink-500/20 shadow-card hover:border-pink-500/50 hover:shadow-[0_0_30px_rgba(209,40,69,0.3)] transition-all duration-300 reveal-on-scroll reveal-delay-1 group">
+            <div class="w-14 h-14 rounded-2xl bg-[#230E36] p-2.5 mb-6 border border-pink-500/30 group-hover:scale-110 transition-transform">
+              <img src="assets/icons/icon-florais.svg" alt="Acolhimento Emocional" class="w-full h-full object-contain" />
+            </div>
+            <h3 class="font-serif text-2xl text-white mb-3 group-hover:text-pink-300 transition-colors">Acolhimento Emocional</h3>
+            <p class="text-purple-200 text-sm leading-relaxed font-light">
+              Escuta empática e suporte com Florais de Bach para transmutar sentimentos de ansiedade, insegurança e fases de transformação.
+            </p>
           </div>
-          <div class="category-card-content">
-            <span class="category-badge">Spa & Relaxamento</span>
-            <h3 class="category-title">Bem-Estar & Massagens</h3>
-            <p class="category-desc">Massagens relaxantes, drenagem linfática e experiências de spa para renovar as
-              energias.</p>
-            <a href="servicos.html" class="category-link">Ver tratamentos →</a>
+
+          <!-- Pilar 3: Meditação & Atenção Plena -->
+          <div class="bg-[#150921]/80 p-8 rounded-3xl border border-pink-500/20 shadow-card hover:border-pink-500/50 hover:shadow-[0_0_30px_rgba(209,40,69,0.3)] transition-all duration-300 reveal-on-scroll reveal-delay-2 group">
+            <div class="w-14 h-14 rounded-2xl bg-[#230E36] p-2.5 mb-6 border border-pink-500/30 group-hover:scale-110 transition-transform">
+              <img src="assets/icons/icon-meditacao.svg" alt="Clareza Cósmica" class="w-full h-full object-contain" />
+            </div>
+            <h3 class="font-serif text-2xl text-white mb-3 group-hover:text-pink-300 transition-colors">Clareza & Meditação</h3>
+            <p class="text-purple-200 text-sm leading-relaxed font-light">
+              Técnicas de presença e meditação guiada que ensinam a mente a desacelerar e ancorar-se no silêncio do momento presente.
+            </p>
           </div>
-        </article>
+
+          <!-- Pilar 4: Aromaterapia & Respiração -->
+          <div class="bg-[#150921]/80 p-8 rounded-3xl border border-pink-500/20 shadow-card hover:border-pink-500/50 hover:shadow-[0_0_30px_rgba(209,40,69,0.3)] transition-all duration-300 reveal-on-scroll reveal-delay-3 group">
+            <div class="w-14 h-14 rounded-2xl bg-[#230E36] p-2.5 mb-6 border border-pink-500/30 group-hover:scale-110 transition-transform">
+              <img src="assets/icons/icon-aromaterapia.svg" alt="Aromaterapia & Sentidos" class="w-full h-full object-contain" />
+            </div>
+            <h3 class="font-serif text-2xl text-white mb-3 group-hover:text-pink-300 transition-colors">Equilíbrio Sensorial</h3>
+            <p class="text-purple-200 text-sm leading-relaxed font-light">
+              Aromaterapia sutil e respiração diafragmática para regular o sistema nervoso e desfazer tensões acumuladas no corpo físico.
+            </p>
+          </div>
+
+        </div>
+
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ── SERVIÇOS EM DESTAQUE ───────────────────────────────── -->
-  <section class="section bg-off-white" id="destaques">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="text-eyebrow">Os Mais Desejados</span>
-        <h2 class="section-title">Tratamentos em Destaque</h2>
-        <div class="divider"></div>
-        <p class="section-subtitle">
-          Adicione seus procedimentos ao carrinho e receba atendimento exclusivo com nossa equipe.
+    <!-- ============================================================
+         ATENDIMENTOS EM DESTAQUE (CATÁLOGO INFORMATIVO CÓSMICO)
+         ============================================================ -->
+    <section class="py-20 lg:py-28 bg-[#0C0614] border-t border-purple-900/40 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+          <div>
+            <span class="text-xs uppercase tracking-widest font-semibold text-crimson-400 mb-2 block">
+              Práticas Terapêuticas Confirmadas
+            </span>
+            <h2 class="font-serif text-3xl sm:text-4xl text-white">
+              Atendimentos em Destaque
+            </h2>
+            <p class="text-purple-200 text-sm sm:text-base mt-2 max-w-xl font-light">
+              Conheça as modalidades conduzidas por Aureci Sena. Cada encontro é personalizado para acolher suas necessidades no momento presente.
+            </p>
+          </div>
+          <div>
+            <a 
+              href="atendimentos.html" 
+              class="inline-flex items-center gap-2 text-sm font-semibold text-pink-300 hover:text-white group"
+            >
+              <span>Ver catálogo completo</span>
+              <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Container dinâmico com os cards das terapias -->
+        <div id="home-therapies-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Renderizado via JS / therapies.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SOBRE A TERAPEUTA AURECI SENA (COM FOTO E ÍCONES)
+         ============================================================ -->
+    <section class="py-20 lg:py-28 bg-[#07030B] relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          
+          <!-- Foto Editorial da Terapeuta com Moldura Cósmica -->
+          <div class="lg:col-span-5 reveal-on-scroll">
+            <div class="relative mx-auto max-w-md lg:max-w-none">
+              <!-- Brilho de Fundo da Moldura -->
+              <div class="absolute -inset-1 rounded-3xl bg-gradient-to-tr from-crimson-600 via-astral-600 to-crimson-400 opacity-60 blur-lg"></div>
+              
+              <div class="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl border border-pink-500/30 bg-[#13071E]">
+                <img 
+                  src="assets/images/therapist-portrait.jpg" 
+                  alt="Aureci Sena - Terapeuta Holística" 
+                  class="w-full h-full object-cover object-top filter brightness-95"
+                  loading="lazy"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0C0614] via-transparent to-transparent opacity-50"></div>
+              </div>
+
+              <!-- Badge decorativo cósmico -->
+              <div class="absolute -bottom-6 -right-4 sm:right-6 bg-[#180A26]/95 backdrop-blur-md p-4 rounded-2xl shadow-xl border border-pink-500/40 max-w-xs">
+                <div class="flex items-center gap-3">
+                  <div class="w-8 h-8 rounded-full bg-crimson-600/30 p-1 border border-pink-400/40">
+                    <img src="assets/icons/icon-cristal.svg" alt="" class="w-full h-full object-contain" />
+                  </div>
+                  <div>
+                    <p class="font-serif text-lg text-white leading-tight">Presença & Sensibilidade</p>
+                    <p class="text-xs text-pink-300 mt-0.5">Aureci Sena • Terapeuta Holística</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Texto de Apresentação -->
+          <div class="lg:col-span-7 reveal-on-scroll reveal-delay-1">
+            <span class="text-xs uppercase tracking-widest font-semibold text-crimson-400 mb-2 block">
+              Quem Conduz o Espaço
+            </span>
+            <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-white mb-6">
+              Aureci Sena
+            </h2>
+            
+            <p class="text-purple-200 text-base leading-relaxed mb-4 font-light">
+              Acredito profundamente que toda pessoa carrega em si a capacidade inata de retornar ao seu centro de harmonia. Na vastidão do universo, o cuidado holístico é a ponte gentil que nos devolve a calma, a respiração plena e o reencontro com quem verdadeiramente somos.
+            </p>
+            <p class="text-purple-200 text-base leading-relaxed mb-6 font-light">
+              Com formação em práticas integrativas, dedico-me ao estudo contínuo de recursos energéticos, aromáticos e contemplativos que dialogam com a totalidade do ser: mente, corpo, sensibilidade e espírito.
+            </p>
+
+            <div class="space-y-3.5 mb-8">
+              <div class="flex items-center gap-3 text-sm text-purple-100">
+                <span class="w-2 h-2 rounded-full bg-crimson-500 shadow-[0_0_8px_rgba(209,40,69,0.8)]"></span>
+                <span>Atendimento confidencial, sigiloso e sem julgamentos</span>
+              </div>
+              <div class="flex items-center gap-3 text-sm text-purple-100">
+                <span class="w-2 h-2 rounded-full bg-crimson-500 shadow-[0_0_8px_rgba(209,40,69,0.8)]"></span>
+                <span>Alinhamento energético individualizado a cada sessão</span>
+              </div>
+              <div class="flex items-center gap-3 text-sm text-purple-100">
+                <span class="w-2 h-2 rounded-full bg-crimson-500 shadow-[0_0_8px_rgba(209,40,69,0.8)]"></span>
+                <span>Atendimentos online por videochamada em todo o Brasil e exterior</span>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-4">
+              <a 
+                href="sobre.html" 
+                class="inline-flex items-center justify-center px-7 py-3 rounded-full text-sm font-medium btn-cosmos-secondary"
+              >
+                Conheça minha trajetória
+              </a>
+              <button 
+                type="button" 
+                onclick="openAppointmentModal()"
+                class="inline-flex items-center justify-center px-7 py-3 rounded-full text-sm font-medium btn-cosmos-primary"
+              >
+                Solicitar conversa inicial
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         COMO FUNCIONA UMA SESSÃO (ETAPAS CLARAS COM ÍCONES)
+         ============================================================ -->
+    <section id="como-funciona" class="py-20 lg:py-28 bg-[#0C0614] border-y border-purple-900/40 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <span class="text-xs uppercase tracking-widest font-semibold text-crimson-400 mb-2 block">
+            Transparência & Tranquilidade
+          </span>
+          <h2 class="font-serif text-3xl sm:text-4xl text-white mb-4">
+            Como funciona a sessão terapêutica?
+          </h2>
+          <p class="text-purple-200 text-sm sm:text-base font-light">
+            Se é sua primeira vez buscando práticas integrativas, todo o processo é suave, acolhedor e respeita seu momento.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+          
+          <!-- Passo 1 -->
+          <div class="bg-[#150921]/90 p-8 rounded-3xl border border-pink-500/20 relative reveal-on-scroll shadow-card">
+            <div class="flex items-center justify-between mb-4">
+              <span class="font-serif text-5xl font-light text-crimson-500/70">01</span>
+              <img src="assets/icons/icon-meditacao.svg" alt="" class="w-8 h-8 opacity-75"/>
+            </div>
+            <h3 class="font-serif text-2xl text-white mb-3">Primeiro Contato & Escuta</h3>
+            <p class="text-purple-200 text-sm leading-relaxed font-light">
+              Iniciamos com uma conversa empática para entender seus desafios atuais, sua rotina de vida e o que você busca harmonizar no momento.
+            </p>
+          </div>
+
+          <!-- Passo 2 -->
+          <div class="bg-[#150921]/90 p-8 rounded-3xl border border-pink-500/20 relative reveal-on-scroll reveal-delay-1 shadow-card">
+            <div class="flex items-center justify-between mb-4">
+              <span class="font-serif text-5xl font-light text-crimson-500/70">02</span>
+              <img src="assets/icons/icon-reiki.svg" alt="" class="w-8 h-8 opacity-75"/>
+            </div>
+            <h3 class="font-serif text-2xl text-white mb-3">Aplicação da Prática</h3>
+            <p class="text-purple-200 text-sm leading-relaxed font-light">
+              Vivência da modalidade definida (Reiki, Aromaterapia, Meditação ou Florais) em atmosfera silenciosa, serena e respeitosa ao seu ritmo.
+            </p>
+          </div>
+
+          <!-- Passo 3 -->
+          <div class="bg-[#150921]/90 p-8 rounded-3xl border border-pink-500/20 relative reveal-on-scroll reveal-delay-2 shadow-card">
+            <div class="flex items-center justify-between mb-4">
+              <span class="font-serif text-5xl font-light text-crimson-500/70">03</span>
+              <img src="assets/icons/icon-respiracao.svg" alt="" class="w-8 h-8 opacity-75"/>
+            </div>
+            <h3 class="font-serif text-2xl text-white mb-3">Integração & Orientações</h3>
+            <p class="text-purple-200 text-sm leading-relaxed font-light">
+              Espaço para absorver a experiência, partilhar percepções e receber orientações práticas de autocuidado para os próximos dias.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         ACOLHIMENTO & ÉTICA (SEM DEPOIMENTOS FICTÍCIOS — REGRA 32)
+         ============================================================ -->
+    <section class="py-20 lg:py-24 bg-gradient-to-r from-crimson-950/40 via-astral-950/50 to-crimson-950/40 border-b border-pink-500/20 relative">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center reveal-on-scroll relative z-10">
+        <span class="text-xs uppercase tracking-widest font-semibold text-crimson-400 mb-3 block">
+          Espaço de Acolhimento Seguro
+        </span>
+        <h2 class="font-serif text-3xl sm:text-4xl text-white mb-6">
+          Fundamentado na ética, no sigilo e no respeito humano
+        </h2>
+        <p class="text-purple-200 text-base sm:text-lg leading-relaxed mb-6 font-light">
+          Cada encontro terapêutico é protegido por sigilo absoluto. Não utilizamos promessas milagrosas nem exigências. O trabalho visa apoiar seu reequilíbrio energético e autoconhecimento de forma consciente, sensível e madura.
         </p>
-      </div>
-
-      <div class="services-grid">
-        <!-- Card 1 -->
-        <article class="service-card reveal">
-          <div class="service-card-img">
-            <img src="assets/images/category-facial.jpg" alt="Limpeza de Pele Premium" loading="lazy">
-            <span class="service-card-badge">Facial</span>
-            <span class="service-card-featured">⭐ Destaque</span>
-          </div>
-          <div class="service-card-body">
-            <h3 class="service-card-name">Limpeza de Pele Premium</h3>
-            <p class="service-card-desc">Protocolo completo de limpeza profunda com vapor de ozônio, extração indolor e
-              máscara revitalizante.</p>
-            <div class="service-card-meta">
-              <span class="meta-tag">⏱ 75 min</span>
-              <span class="meta-tag">🗓 Sessão única</span>
-            </div>
-            <div class="service-card-footer">
-              <div class="service-price">R$ 189,90</div>
-              <button class="btn-add-cart" id="add-cart-3" onclick="handleAddToCart(3)">+ Adicionar</button>
-            </div>
-          </div>
-        </article>
-
-        <!-- Card 2 -->
-        <article class="service-card reveal">
-          <div class="service-card-img">
-            <img src="assets/images/category-harmonizacao.jpg" alt="Toxina Botulínica (Botox)" loading="lazy">
-            <span class="service-card-badge">Harmonização</span>
-            <span class="service-card-featured">⭐ Destaque</span>
-          </div>
-          <div class="service-card-body">
-            <h3 class="service-card-name">Toxina Botulínica (Botox)</h3>
-            <p class="service-card-desc">Relaxamento muscular suave para atenuar linhas de expressão, mantendo a
-              naturalidade do seu rosto.</p>
-            <div class="service-card-meta">
-              <span class="meta-tag">⏱ 30 min</span>
-              <span class="meta-tag">🗓 Procedimento único</span>
-            </div>
-            <div class="service-card-footer">
-              <div class="service-price">R$ 750,00</div>
-              <button class="btn-add-cart" id="add-cart-10" onclick="handleAddToCart(10)">+ Adicionar</button>
-            </div>
-          </div>
-        </article>
-
-        <!-- Card 3 -->
-        <article class="service-card reveal">
-          <div class="service-card-img">
-            <img src="assets/images/category-laser.jpg" alt="Depilação a Laser" loading="lazy">
-            <span class="service-card-badge">Laser</span>
-            <span class="service-card-featured">⭐ Destaque</span>
-          </div>
-          <div class="service-card-body">
-            <h3 class="service-card-name">Depilação a Laser</h3>
-            <p class="service-card-desc">Tecnologia avançada para eliminação definitiva dos pelos com resfriamento
-              ponteira indolor.</p>
-            <div class="service-card-meta">
-              <span class="meta-tag">⏱ 60 min</span>
-              <span class="meta-tag">🗓 6 a 10 sessões</span>
-            </div>
-            <div class="service-card-footer">
-              <div class="service-price">R$ 249,90</div>
-              <button class="btn-add-cart" id="add-cart-1" onclick="handleAddToCart(1)">+ Adicionar</button>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <div class="text-center mt-12 reveal">
-        <a href="servicos.html" class="btn btn-outline btn-lg">Ver Todos os 15 Tratamentos →</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── SOBRE RESUMIDO ─────────────────────────────────────── -->
-  <section class="section" id="sobre-preview">
-    <div class="container">
-      <div class="about-story">
-        <div class="about-story-img reveal">
-          <img src="assets/images/hero-main.jpg" alt="Clínica Belle Skin & Wellness" loading="lazy">
+        <div class="p-6 bg-[#160A23]/80 rounded-2xl border border-pink-500/30 text-xs sm:text-sm text-purple-200 max-w-2xl mx-auto font-light">
+          <strong class="text-pink-300">Aviso Ético Responsável:</strong> Práticas integrativas promovem bem-estar, equilíbrio bioenergético e qualidade de vida. Elas não constituem nem substituem avaliações ou tratamentos médicos e psicológicos convencionais.
         </div>
-        <div class="about-story-content reveal">
-          <span class="text-eyebrow">Sobre a Belle Skin</span>
-          <h2 class="section-title">Onde a sofisticação encontra a saúde da sua pele</h2>
-          <div class="divider" style="margin-left: 0;"></div>
-          <p>
-            Fundada com a missão de redefinir os conceitos de estética e bem-estar, a Belle Skin & Wellness combina
-            excelência técnica, protocolos clínicos respaldados e atendimento humanizado.
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PERGUNTAS FREQUENTES (FAQ ACCORDION)
+         ============================================================ -->
+    <section id="faq" class="py-20 lg:py-28 bg-[#07030B] relative">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <div class="text-center mb-16">
+          <span class="text-xs uppercase tracking-widest font-semibold text-crimson-400 mb-2 block">
+            Tire Suas Dúvidas
+          </span>
+          <h2 class="font-serif text-3xl sm:text-4xl text-white mb-4">
+            Perguntas Frequentes
+          </h2>
+          <p class="text-purple-200 text-sm sm:text-base font-light">
+            Esclarecimentos diretos sobre agendamento, formatos das sessões e o que esperar.
           </p>
-          <p>
-            Acreditamos que a verdadeira beleza surge quando você se sente confiante, descansada e em harmonia com sua
-            essência. Nosso espaço foi projetado para oferecer uma pausa revigorante na sua rotina.
+        </div>
+
+        <div class="space-y-4">
+          
+          <div class="faq-item rounded-2xl bg-[#150921]/70 px-6 border border-pink-500/20">
+            <button class="faq-question py-5 text-left font-serif text-xl" aria-expanded="false">
+              <span>Como funciona o primeiro contato para agendamento?</span>
+              <svg class="faq-icon w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+            <div class="faq-answer text-sm leading-relaxed font-light">
+              Você pode preencher o formulário de solicitação no site ou clicar no botão de WhatsApp. Seus dados e preferências são enviados diretamente para Aureci Sena, que retornará a mensagem para alinhar o melhor dia e horário.
+            </div>
+          </div>
+
+          <div class="faq-item rounded-2xl bg-[#150921]/70 px-6 border border-pink-500/20">
+            <button class="faq-question py-5 text-left font-serif text-xl" aria-expanded="false">
+              <span>Os atendimentos podem ser realizados online?</span>
+              <svg class="faq-icon w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+            <div class="faq-answer text-sm leading-relaxed font-light">
+              Sim! Práticas como Meditação Guiada, Terapia Floral, Acolhimento Holístico e Envio de Reiki à distância são realizadas por videochamada com a mesma eficácia, acolhimento e presença do formato presencial.
+            </div>
+          </div>
+
+          <div class="faq-item rounded-2xl bg-[#150921]/70 px-6 border border-pink-500/20">
+            <button class="faq-question py-5 text-left font-serif text-xl" aria-expanded="false">
+              <span>Preciso saber exatamente qual terapia escolher antes de agendar?</span>
+              <svg class="faq-icon w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+            <div class="faq-answer text-sm leading-relaxed font-light">
+              Não. Na solicitação, basta marcar a opção "Ainda não sei / Gostaria de orientação". Durante nossa primeira conversa, conversaremos sobre o que você está vivenciando para sugerir a abordagem mais adequada.
+            </div>
+          </div>
+
+          <div class="faq-item rounded-2xl bg-[#150921]/70 px-6 border border-pink-500/20">
+            <button class="faq-question py-5 text-left font-serif text-xl" aria-expanded="false">
+              <span>Quanto tempo dura cada sessão?</span>
+              <svg class="faq-icon w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+            <div class="faq-answer text-sm leading-relaxed font-light">
+              Em média, as sessões têm duração entre 50 e 60 minutos, garantindo tempo adequado para a escuta inicial, a vivência da prática e o fechamento sereno.
+            </div>
+          </div>
+
+          <div class="faq-item rounded-2xl bg-[#150921]/70 px-6 border border-pink-500/20">
+            <button class="faq-question py-5 text-left font-serif text-xl" aria-expanded="false">
+              <span>As terapias holísticas substituem tratamentos médicos?</span>
+              <svg class="faq-icon w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+            <div class="faq-answer text-sm leading-relaxed font-light">
+              Não. As práticas integrativas atuam como complemento benéfico ao bem-estar e ao equilíbrio do indivíduo. Nunca recomendamos suspensão ou alteração de tratamentos médicos ou medicamentos prescritos.
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CTA FINAL DE AGENDAMENTO CÓSMICO
+         ============================================================ -->
+    <section class="py-20 lg:py-28 bg-[#0C0614] border-t border-purple-900/40 relative overflow-hidden">
+      <!-- Imagem Cósmica no Fundo do CTA com Overlay Suave -->
+      <div class="absolute inset-0 opacity-25">
+        <img src="assets/images/bg-universe.jpg" alt="" class="w-full h-full object-cover"/>
+      </div>
+
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center reveal-on-scroll relative z-10">
+        <div class="bg-gradient-to-br from-[#1B0B2A]/90 to-[#0F0517]/95 rounded-3xl p-10 sm:p-14 border border-pink-500/30 shadow-[0_0_50px_rgba(209,40,69,0.25)] backdrop-blur-md">
+          <span class="text-xs uppercase tracking-widest font-semibold text-crimson-400 mb-3 block">
+            Dê o Primeiro Passo
+          </span>
+          <h2 class="font-serif text-3xl sm:text-5xl text-white mb-6 max-w-2xl mx-auto">
+            Reserve um momento para cuidar da sua <span class="text-gradient-cosmos">energia e paz interior</span>.
+          </h2>
+          <p class="text-purple-200 text-base sm:text-lg leading-relaxed max-w-xl mx-auto mb-8 font-light">
+            Dúvidas sobre qual prática é ideal para seu momento atual? Vamos conversar com calma e sem compromisso.
           </p>
-          <div class="about-stats-grid mt-6">
-            <div class="stat-card">
-              <span class="stat-num">9+</span>
-              <span class="stat-label">Anos de Excelência</span>
-            </div>
-            <div class="stat-card">
-              <span class="stat-num">12k+</span>
-              <span class="stat-label">Clientes Atendidas</span>
-            </div>
-            <div class="stat-card">
-              <span class="stat-num">99%</span>
-              <span class="stat-label">Satisfação Comprovada</span>
-            </div>
-          </div>
-          <div class="mt-8">
-            <a href="sobre.html" class="btn btn-primary">Conheça Nossa História</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- ── DEPOIMENTOS (CAROUSEL) ─────────────────────────────── -->
-  <section class="section bg-cream" id="depoimentos">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="text-eyebrow">Experiências Reais</span>
-        <h2 class="section-title">O que nossas clientes dizem</h2>
-        <div class="divider"></div>
-        <p class="section-subtitle">A confiança de quem vivencia o padrão de atendimento Belle Skin.</p>
-      </div>
-
-      <div class="testimonials-carousel reveal">
-        <div class="testimonial-slides-wrapper" style="overflow: hidden; border-radius: var(--radius-xl);">
-          <div class="testimonial-slides"
-            style="display: flex; transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);">
-            <!-- Slide 1 -->
-            <div class="testimonial-slide"
-              style="min-width: 100%; padding: var(--space-8); background: var(--color-white); box-sizing: border-box; text-align: center;">
-              <div class="testimonial-stars"
-                style="color: var(--color-gold); font-size: 1.25rem; margin-bottom: var(--space-4);">★★★★★</div>
-              <p
-                style="font-family: var(--font-display); font-size: 1.35rem; font-style: italic; color: var(--color-text-primary); line-height: 1.7; max-width: 680px; margin: 0 auto var(--space-6);">
-                "A experiência na Belle Skin superou todas as minhas expectativas. O protocolo de rejuvenescimento
-                devolveu o viço e o brilho da minha pele de forma totalmente natural. O carinho da equipe é
-                incomparável!"
-              </p>
-              <h4 style="font-weight: 600; font-size: 1rem; color: var(--color-text-primary);">Mariana Guimarães</h4>
-              <span style="font-size: 0.85rem; color: var(--color-gold-dark);">Advogada • Tratamento Facial</span>
-            </div>
-
-            <!-- Slide 2 -->
-            <div class="testimonial-slide"
-              style="min-width: 100%; padding: var(--space-8); background: var(--color-white); box-sizing: border-box; text-align: center;">
-              <div class="testimonial-stars"
-                style="color: var(--color-gold); font-size: 1.25rem; margin-bottom: var(--space-4);">★★★★★</div>
-              <p
-                style="font-family: var(--font-display); font-size: 1.35rem; font-style: italic; color: var(--color-text-primary); line-height: 1.7; max-width: 680px; margin: 0 auto var(--space-6);">
-                "A depilação a laser não doeu absolutamente nada! A ponteira resfriada faz toda a diferença. Já na
-                terceira sessão vi resultados incríveis. A clínica é um oásis no meio de São Paulo."
-              </p>
-              <h4 style="font-weight: 600; font-size: 1rem; color: var(--color-text-primary);">Fernanda Albuquerque</h4>
-              <span style="font-size: 0.85rem; color: var(--color-gold-dark);">Empresária • Depilação a Laser</span>
-            </div>
-
-            <!-- Slide 3 -->
-            <div class="testimonial-slide"
-              style="min-width: 100%; padding: var(--space-8); background: var(--color-white); box-sizing: border-box; text-align: center;">
-              <div class="testimonial-stars"
-                style="color: var(--color-gold); font-size: 1.25rem; margin-bottom: var(--space-4);">★★★★★</div>
-              <p
-                style="font-family: var(--font-display); font-size: 1.35rem; font-style: italic; color: var(--color-text-primary); line-height: 1.7; max-width: 680px; margin: 0 auto var(--space-6);">
-                "Fiz a harmonização com Botox e fiquei encantada com a sutileza do resultado. Rosto descansado, elegante
-                e sem rigidez. Profissionais impecáveis do início ao fim!"
-              </p>
-              <h4 style="font-weight: 600; font-size: 1rem; color: var(--color-text-primary);">Camila Prado Silveira
-              </h4>
-              <span style="font-size: 0.85rem; color: var(--color-gold-dark);">Arquiteta • Harmonização Facial</span>
-            </div>
-          </div>
-        </div>
-
-        <div
-          style="display: flex; align-items: center; justify-content: center; gap: var(--space-4); margin-top: var(--space-6);">
-          <button class="testimonial-prev btn-outline"
-            style="width: 40px; height: 40px; border-radius: 50%; padding: 0; display: flex; align-items: center; justify-content: center;"
-            aria-label="Depoimento anterior">←</button>
-          <div class="testimonial-dots" style="display: flex; gap: 8px;"></div>
-          <button class="testimonial-next btn-outline"
-            style="width: 40px; height: 40px; border-radius: 50%; padding: 0; display: flex; align-items: center; justify-content: center;"
-            aria-label="Próximo depoimento">→</button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── MARCAS TICKER ──────────────────────────────────────── -->
-  <section class="section-sm"
-    style="background: var(--color-white); border-top: 1px solid var(--color-border-light); border-bottom: 1px solid var(--color-border-light); overflow: hidden;">
-    <div class="container text-center mb-6">
-      <span class="text-eyebrow" style="font-size: 0.75rem;">Tecnologias e Dermocosméticos de Referência Global</span>
-    </div>
-    <div class="brands-marquee" style="overflow: hidden; width: 100%; position: relative;">
-      <div class="brands-track"
-        style="display: flex; gap: var(--space-12); align-items: center; width: max-content; animation: marquee 25s linear infinite;">
-        <span class="brand-item"
-          style="font-family: var(--font-display); font-size: 1.4rem; color: var(--color-text-muted); font-weight: 600; letter-spacing: 0.1em; opacity: 0.7;">SKINCEUTICALS</span>
-        <span class="brand-item"
-          style="font-family: var(--font-display); font-size: 1.4rem; color: var(--color-text-muted); font-weight: 600; letter-spacing: 0.1em; opacity: 0.7;">LA
-          ROCHE-POSAY</span>
-        <span class="brand-item"
-          style="font-family: var(--font-display); font-size: 1.4rem; color: var(--color-text-muted); font-weight: 600; letter-spacing: 0.1em; opacity: 0.7;">GALDERMA</span>
-        <span class="brand-item"
-          style="font-family: var(--font-display); font-size: 1.4rem; color: var(--color-text-muted); font-weight: 600; letter-spacing: 0.1em; opacity: 0.7;">ALLERGAN
-          AESTHETICS</span>
-        <span class="brand-item"
-          style="font-family: var(--font-display); font-size: 1.4rem; color: var(--color-text-muted); font-weight: 600; letter-spacing: 0.1em; opacity: 0.7;">ISDIN</span>
-        <span class="brand-item"
-          style="font-family: var(--font-display); font-size: 1.4rem; color: var(--color-text-muted); font-weight: 600; letter-spacing: 0.1em; opacity: 0.7;">SESDERMA</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── FAQ SECTION ────────────────────────────────────────── -->
-  <section class="section" id="faq">
-    <div class="container" style="max-width: 800px;">
-      <div class="section-header reveal">
-        <span class="text-eyebrow">Dúvidas Frequentes</span>
-        <h2 class="section-title">Perguntas sobre Atendimento</h2>
-        <div class="divider"></div>
-        <p class="section-subtitle">Tudo o que você precisa saber para planejar sua visita à clínica.</p>
-      </div>
-
-      <div class="faq-list">
-        <!-- FAQ 1 -->
-        <div class="faq-item reveal">
-          <button class="faq-question">
-            <span>Como funciona a solicitação e o agendamento?</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>Você pode navegar pelo catálogo de serviços, adicionar os procedimentos desejados ao carrinho e finalizar
-              informando seus dados e preferência de horário. Ao confirmar, seu pedido estruturado é enviado diretamente
-              ao nosso WhatsApp oficial para validação rápida de data e horário com nossa concierge.</p>
-          </div>
-        </div>
-
-        <!-- FAQ 2 -->
-        <div class="faq-item reveal">
-          <button class="faq-question">
-            <span>É necessário realizar uma avaliação prévia?</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>Sim! Para procedimentos como Harmonização, Bioestimuladores e Peelings Químicos, nossa equipe realiza uma
-              anamnese detalhada no início da sessão para garantir a segurança e o resultado perfeito para seu tipo de
-              pele.</p>
-          </div>
-        </div>
-
-        <!-- FAQ 3 -->
-        <div class="faq-item reveal">
-          <button class="faq-question">
-            <span>Posso solicitar mais de um procedimento no mesmo atendimento?</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>Com certeza! Nosso sistema permite adicionar múltiplos serviços ao carrinho (por exemplo: Limpeza de Pele
-              + Drenagem Linfática). Nossa equipe otimiza sua agenda para realizar os tratamentos em sequência,
-              garantindo o melhor aproveitamento do seu tempo.</p>
-          </div>
-        </div>
-
-        <!-- FAQ 4 -->
-        <div class="faq-item reveal">
-          <button class="faq-question">
-            <span>Como funciona a forma de pagamento?</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>O site funciona como catálogo e solicitação de atendimento — não realizamos cobrança online no momento do
-              pedido. As formas de pagamento (Pix, cartões de crédito em até 10x sem juros ou débito) são combinadas
-              diretamente no fechamento ou na clínica no dia do procedimento.</p>
-          </div>
-        </div>
-
-        <!-- FAQ 5 -->
-        <div class="faq-item reveal">
-          <button class="faq-question">
-            <span>Qual a política para remarcações ou cancelamentos?</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>Solicitamos a gentileza de nos avisar com pelo menos 24 horas de antecedência pelo WhatsApp caso
-              necessite reagendar seu horário, permitindo que a agenda seja reorganizada para outras clientes.</p>
+          <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <button 
+              type="button" 
+              onclick="openAppointmentModal()"
+              class="w-full sm:w-auto px-8 py-3.5 rounded-full text-sm font-medium btn-cosmos-primary"
+            >
+              Solicitar Atendimento
+            </button>
+            <button 
+              type="button" 
+              onclick="WhatsAppService.openDirectChat('Olá, Aureci! Gostaria de conversar para entender melhor os atendimentos.')"
+              class="w-full sm:w-auto px-8 py-3.5 rounded-full text-sm font-medium btn-cosmos-secondary inline-flex items-center justify-center gap-2"
+            >
+              <svg class="w-4 h-4 text-[#25D366]" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
+              </svg>
+              <span>Conversar pelo WhatsApp</span>
+            </button>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ── CTA FINAL ──────────────────────────────────────────── -->
-  <section class="section"
-    style="background: linear-gradient(135deg, var(--color-cream) 0%, var(--color-nude) 100%); text-align: center;">
-    <div class="container" style="max-width: 700px;">
-      <span class="text-eyebrow">Seu Momento de Cuidado</span>
-      <h2 class="section-title mt-3">Pronta para viver a sua melhor versão?</h2>
-      <p class="section-subtitle mt-4 mb-8">
-        Escolha seus tratamentos favoritos e garanta um atendimento reservado exclusivamente para você.
-      </p>
-      <div style="display: flex; gap: var(--space-4); justify-content: center; flex-wrap: wrap;">
-        <a href="servicos.html" class="btn btn-primary btn-lg">Explorar Catálogo de Serviços</a>
-        <a href="contato.html" class="btn btn-outline btn-lg">Falar com uma Especialista</a>
-      </div>
-    </div>
-  </section>
+  </main>
 
-  <!-- ── MAPA & LOCALIZAÇÃO ─────────────────────────────────── -->
-  <section class="section bg-white" id="localizacao">
-    <div class="container">
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-12); align-items: center;">
-        <div class="reveal">
-          <span class="text-eyebrow">Localização Nobre</span>
-          <h2 class="section-title">Onde Estamos</h2>
-          <div class="divider" style="margin-left: 0;"></div>
-          <p class="mt-4" style="color: var(--color-text-secondary); line-height: 1.7;">
-            Nossa clínica está situada em um dos endereços mais charmosos e acessíveis da cidade, com estacionamento com
-            manobrista e total discrição para seu conforto.
+  <!-- ============================================================
+       FOOTER CÓSMICO
+       ============================================================ -->
+  <footer class="bg-[#050208] text-purple-200 pt-16 pb-12 border-t border-purple-950">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-purple-900/40">
+        
+        <div>
+          <div class="flex items-center gap-3 mb-2">
+            <img src="assets/logos/logo-aureci-sena.svg" alt="" class="w-8 h-8"/>
+            <span class="font-serif text-2xl font-semibold text-white tracking-tight">Aureci Sena</span>
+          </div>
+          <span class="block text-xs uppercase tracking-widest text-crimson-400 mt-1 mb-4">Terapeuta Holística</span>
+          <p class="text-purple-300 text-sm leading-relaxed mb-6 font-light">
+            Espaço dedicado ao acolhimento integral, à serenidade e à reconexão com sua energia cósmica através de práticas integrativas.
           </p>
-          <div class="mt-6" style="display: flex; flex-direction: column; gap: var(--space-3);">
-            <p><strong>📍 Endereço:</strong> <span data-clinic-address>Rua Conde das Galveias, 27, São Paulo -
-                SP</span></p>
-            <p><strong>🕒 Horários:</strong> <span data-clinic-hours-week>Segunda a Sexta: 09:00 — 19:00</span> | <span
-                data-clinic-hours-sat>Sábado: 09:00 — 14:00</span></p>
-            <p><strong>📱 WhatsApp:</strong> <span data-clinic-phone>(11) 98960-3385</span></p>
-          </div>
-          <div class="mt-6">
-            <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Abrir no
-              Google Maps →</a>
-          </div>
-        </div>
-        <div class="reveal"
-          style="border-radius: var(--radius-xl); overflow: hidden; height: 380px; box-shadow: var(--shadow-md);">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.2415783256034!2d-46.6372138!3d-23.595679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a214d023f2d%3A0x633519c5c96767eb!2sR.%20Conde%20de%20Porto%20Alegre%20-%20Campo%20Belo%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1680000000000!5m2!1spt-BR!2sbr"
-            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade" title="Localização da Clínica">
-          </iframe>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── FOOTER ─────────────────────────────────────────────── -->
-  <footer class="footer">
-    <div class="container footer-grid">
-      <!-- Coluna 1: Info da Clínica -->
-      <div class="footer-col">
-        <a href="index.html" class="logo mb-4" style="display: inline-flex;">
-          <span class="logo-mark">✨</span>
-          <span class="logo-text" style="color: white;">Belle Skin <em style="color: var(--color-gold-light);">&
-              Wellness</em></span>
-        </a>
-        <p style="font-size: var(--text-sm); color: #b0a49c; line-height: 1.7; margin-bottom: var(--space-6);">
-          Clínica premium de estética avançada e bem-estar. Protocolos exclusivos para realçar sua beleza natural com
-          segurança e tecnologia.
-        </p>
-        <div class="footer-social" style="display: flex; gap: var(--space-4);">
-          <a href="#" data-instagram-link aria-label="Instagram"
-            style="color: var(--color-gold-light); font-size: 1.2rem;">📷</a>
-          <a href="#" data-facebook-link aria-label="Facebook"
-            style="color: var(--color-gold-light); font-size: 1.2rem;">📘</a>
-          <a href="#" data-whatsapp-link aria-label="WhatsApp"
-            style="color: var(--color-gold-light); font-size: 1.2rem;">💬</a>
-        </div>
-      </div>
-
-      <!-- Coluna 2: Navegação -->
-      <div class="footer-col">
-        <h4 style="color: white; font-family: var(--font-display); font-size: 1.2rem; margin-bottom: var(--space-4);">A
-          Clínica</h4>
-        <ul
-          style="list-style: none; display: flex; flex-direction: column; gap: var(--space-2); font-size: var(--text-sm);">
-          <li><a href="sobre.html" style="color: #b0a49c; transition: color 0.3s;">Sobre Nós</a></li>
-          <li><a href="equipe.html" style="color: #b0a49c; transition: color 0.3s;">Corpo Clínico</a></li>
-          <li><a href="servicos.html" style="color: #b0a49c; transition: color 0.3s;">Catálogo de Serviços</a></li>
-          <li><a href="contato.html" style="color: #b0a49c; transition: color 0.3s;">Fale Conosco</a></li>
-        </ul>
-      </div>
-
-      <!-- Coluna 3: Especialidades -->
-      <div class="footer-col">
-        <h4 style="color: white; font-family: var(--font-display); font-size: 1.2rem; margin-bottom: var(--space-4);">
-          Especialidades</h4>
-        <ul
-          style="list-style: none; display: flex; flex-direction: column; gap: var(--space-2); font-size: var(--text-sm);">
-          <li><a href="servicos.html" style="color: #b0a49c;">Depilação & Laser</a></li>
-          <li><a href="servicos.html" style="color: #b0a49c;">Estética Facial & Peelings</a></li>
-          <li><a href="servicos.html" style="color: #b0a49c;">Modelagem Corporal</a></li>
-          <li><a href="servicos.html" style="color: #b0a49c;">Harmonização & Botox</a></li>
-          <li><a href="servicos.html" style="color: #b0a49c;">Massagens & Spa</a></li>
-        </ul>
-      </div>
-
-      <!-- Coluna 4: Atendimento -->
-      <div class="footer-col">
-        <h4 style="color: white; font-family: var(--font-display); font-size: 1.2rem; margin-bottom: var(--space-4);">
-          Atendimento</h4>
-        <div
-          style="font-size: var(--text-sm); color: #b0a49c; line-height: 1.8; display: flex; flex-direction: column; gap: var(--space-2);">
-          <p>📞 <span data-clinic-phone>(11) 98960-3385</span></p>
-          <p>✉️ <span data-clinic-email>contato@belleskin.com.br</span></p>
-          <p>📍 <span data-clinic-address>Rua Conde das Galveias, 27, SP</span></p>
-          <p>🕒 <span data-clinic-hours-week>Seg - Sex: 09:00 - 19:00</span></p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Copyright -->
-    <div
-      style="border-top: 1px solid rgba(255,255,255,0.1); padding: var(--space-6) 0; margin-top: var(--space-12); text-align: center; font-size: var(--text-xs); color: #8a7c73;">
-      <div class="container">
-        <p data-copyright>© 2026 Belle Skin & Wellness. Todos os direitos reservados.</p>
-      </div>
-    </div>
-  </footer>
-
-  <!-- ── CART DRAWER ────────────────────────────────────────── -->
-  <div class="cart-overlay" id="cart-overlay" aria-hidden="true"></div>
-  <aside class="cart-drawer" id="cart-drawer" aria-label="Carrinho de Serviços" role="dialog">
-    <div class="cart-header">
-      <h2>Seu Atendimento</h2>
-      <button class="cart-close" id="cart-close" aria-label="Fechar carrinho">✕</button>
-    </div>
-    <div class="cart-body" id="cart-body">
-      <!-- Injetado por cart.js -->
-    </div>
-    <div class="cart-footer" id="cart-footer">
-      <div class="cart-subtotal">
-        <span class="label">Total Previsto:</span>
-        <span class="value" id="cart-total">R$ 0,00</span>
-      </div>
-      <div class="cart-footer-btns">
-        <button class="btn btn-primary btn-full" id="btn-checkout">Finalizar Solicitação</button>
-        <button class="btn-clear" id="btn-clear-cart">Limpar carrinho</button>
-      </div>
-    </div>
-  </aside>
-
-  <!-- ── CHECKOUT MODAL ─────────────────────────────────────── -->
-  <div class="modal-overlay" id="checkout-modal-overlay" aria-hidden="true" role="dialog">
-    <div class="modal">
-      <div class="modal-header">
-        <h2>Finalizar Solicitação</h2>
-        <button class="cart-close" id="checkout-modal-close" aria-label="Fechar modal">✕</button>
-      </div>
-      <div class="modal-body">
-        <!-- ETAPA 1: Resumo + Formulário de Dados -->
-        <div class="checkout-step active" id="checkout-step-1">
-          <!-- Resumo -->
-          <div class="order-summary">
-            <h3>Resumo dos Procedimentos</h3>
-            <div class="summary-items" id="checkout-summary-items">
-              <!-- Injetado por checkout.js -->
-            </div>
-            <div class="summary-total">
-              <span class="label">Total do Atendimento:</span>
-              <span class="total-value" id="checkout-summary-total">R$ 0,00</span>
-            </div>
-          </div>
-
-          <!-- Formulário -->
-          <form id="checkout-form" novalidate>
-            <h3 class="form-section-title">Seus Dados Pessoais</h3>
-            <div class="form-grid">
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="cust-name">Nome Completo *</label>
-                  <input type="text" id="cust-name" placeholder="Ex: Maria Silva" required>
-                  <span class="field-error"></span>
-                </div>
-                <div class="form-group">
-                  <label for="cust-age">Idade *</label>
-                  <input type="number" id="cust-age" placeholder="Ex: 32" min="12" max="120" required>
-                  <span class="field-error"></span>
-                </div>
-              </div>
-
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="cust-phone">WhatsApp / Telefone *</label>
-                  <input type="tel" id="cust-phone" placeholder="(11) 99999-9999" required>
-                  <span class="field-error"></span>
-                </div>
-                <div class="form-group">
-                  <label for="cust-email">E-mail *</label>
-                  <input type="email" id="cust-email" placeholder="maria@email.com" required>
-                  <span class="field-error"></span>
-                </div>
-              </div>
-
-              <h3 class="form-section-title mt-4">Endereço</h3>
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="cust-cep">CEP * <small style="font-weight: normal; color: var(--color-gold-dark);">(Busca
-                      automática)</small></label>
-                  <input type="text" id="cust-cep" placeholder="00000-000" maxlength="9" required>
-                  <span class="field-error"></span>
-                </div>
-                <div class="form-group">
-                  <label for="cust-street">Rua / Logradouro *</label>
-                  <input type="text" id="cust-street" placeholder="Rua..." required>
-                  <span class="field-error"></span>
-                </div>
-              </div>
-
-              <div class="form-row-3">
-                <div class="form-group">
-                  <label for="cust-number">Número *</label>
-                  <input type="text" id="cust-number" placeholder="100" required>
-                  <span class="field-error"></span>
-                </div>
-                <div class="form-group">
-                  <label for="cust-complement">Complemento</label>
-                  <input type="text" id="cust-complement" placeholder="Apto 42, Bloco B">
-                </div>
-                <div class="form-group">
-                  <label for="cust-neighborhood">Bairro *</label>
-                  <input type="text" id="cust-neighborhood" placeholder="Bairro" required>
-                  <span class="field-error"></span>
-                </div>
-              </div>
-
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="cust-city">Cidade *</label>
-                  <input type="text" id="cust-city" placeholder="São Paulo" required>
-                  <span class="field-error"></span>
-                </div>
-                <div class="form-group">
-                  <label for="cust-state">Estado (UF) *</label>
-                  <input type="text" id="cust-state" placeholder="SP" maxlength="2" required>
-                  <span class="field-error"></span>
-                </div>
-              </div>
-
-              <h3 class="form-section-title mt-4">Preferência de Atendimento</h3>
-              <div class="form-group">
-                <label for="cust-time-preference">Horário Preferido para Contato / Sessão *</label>
-                <select id="cust-time-preference">
-                  <option value="Manhã (09:00 às 12:00)">Manhã (09:00 às 12:00)</option>
-                  <option value="Tarde (13:00 às 17:00)" selected>Tarde (13:00 às 17:00)</option>
-                  <option value="Noite (17:00 às 19:00)">Noite (17:00 às 19:00)</option>
-                  <option value="Não tenho preferência">Não tenho preferência</option>
-                </select>
-              </div>
-            </div>
-          </form>
-
-          <div class="modal-footer">
-            <button class="btn btn-outline" onclick="closeCheckoutModal()">Continuar Escolhendo</button>
-            <button class="btn btn-primary" id="btn-next-confirm">Avançar para Confirmação →</button>
+          <div class="flex items-center gap-3">
+            <a id="social-instagram" href="#" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-[#180A26] border border-pink-500/20 text-purple-200 hover:text-white hover:border-crimson-400 transition-colors flex items-center justify-center" aria-label="Instagram de Aureci Sena">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a id="social-facebook" href="#" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-[#180A26] border border-pink-500/20 text-purple-200 hover:text-white hover:border-crimson-400 transition-colors flex items-center justify-center" aria-label="Facebook de Aureci Sena">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.374 14.5 5 15.5 5H18V0h-3.808C10.596 0 9 1.583 9 4.615V8z"/></svg>
+            </a>
           </div>
         </div>
 
-        <!-- ETAPA 2: Confirmação e Redirecionamento -->
-        <div class="checkout-step" id="checkout-step-2">
-          <div class="confirmation-content">
-            <div class="confirmation-icon">💖</div>
-            <h3>Tudo pronto para seu agendamento!</h3>
+        <div>
+          <h4 class="text-white text-sm font-semibold tracking-wider uppercase mb-4">Navegação</h4>
+          <ul class="space-y-2.5 text-sm font-light">
+            <li><a href="index.html" class="hover:text-pink-300 transition-colors">Página Inicial</a></li>
+            <li><a href="sobre.html" class="hover:text-pink-300 transition-colors">Sobre a Terapeuta</a></li>
+            <li><a href="atendimentos.html" class="hover:text-pink-300 transition-colors">Catálogo de Atendimentos</a></li>
+            <li><a href="#como-funciona" class="hover:text-pink-300 transition-colors">Como Funciona a Sessão</a></li>
+            <li><a href="#faq" class="hover:text-pink-300 transition-colors">Dúvidas Frequentes</a></li>
+            <li><a href="contato.html" class="hover:text-pink-300 transition-colors">Fale Conosco</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white text-sm font-semibold tracking-wider uppercase mb-4">Modalidades</h4>
+          <ul class="space-y-2.5 text-sm text-purple-300 font-light">
+            <li>Reiki & Harmonização Energética</li>
+            <li>Aromaterapia & Cuidado Sensorial</li>
+            <li>Terapia Floral (Florais de Bach)</li>
+            <li>Meditação Guiada & Atenção Plena</li>
+            <li>Respiração Consciente</li>
+            <li>Orientação e Acolhimento Holístico</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white text-sm font-semibold tracking-wider uppercase mb-4">Atendimento</h4>
+          <div class="space-y-3 text-sm text-purple-300 font-light">
             <p>
-              Seu pedido foi estruturado com carinho. Ao continuar, você será direcionada para o WhatsApp da clínica com
-              todos os dados preenchidos para validação de data e horário com nossa concierge.
+              <strong class="text-white block font-medium">Horários:</strong>
+              Segunda a Sexta: 09h às 19h<br>
+              Sábados: 09h às 13h (conforme agenda)
             </p>
-            <div style="display: flex; gap: var(--space-4); justify-content: center;">
-              <button class="btn btn-outline" id="btn-back-to-form">← Voltar e Editar</button>
-              <button class="btn btn-primary" id="btn-submit-whatsapp"
-                style="background: #1a6b4a; border-color: #1a6b4a;">
-                💬 Enviar pelo WhatsApp
+            <p>
+              <strong class="text-white block font-medium">Formato:</strong>
+              Atendimento Online em todo o Brasil e no exterior.
+            </p>
+            <div class="pt-2">
+              <button 
+                type="button" 
+                onclick="openAppointmentModal()"
+                class="inline-flex items-center gap-2 text-xs font-medium text-crimson-400 hover:text-crimson-300"
+              >
+                <span>Solicitar agendamento</span>
+                <span>→</span>
               </button>
             </div>
           </div>
         </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-purple-400 font-light">
+        <p>© 2026 Aureci Sena. Todos os direitos reservados.</p>
+        <p class="text-center md:text-right max-w-lg">
+          As práticas integrativas e holísticas promovem bem-estar e autoconhecimento. Não constituem nem substituem diagnósticos ou tratamentos médicos.
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       MODAL / DRAWER DE AGENDAMENTO CÓSMICO
+       ============================================================ -->
+  <div 
+    id="appointment-modal" 
+    class="modal-overlay hidden" 
+    role="dialog" 
+    aria-modal="true" 
+    aria-labelledby="appointment-modal-title"
+  >
+    <div class="modal-content p-6 sm:p-8">
+      
+      <div class="flex items-center justify-between pb-4 border-b border-pink-500/20">
+        <div>
+          <h3 id="appointment-modal-title" class="font-serif text-2xl text-white">
+            Solicitar Atendimento
+          </h3>
+          <p class="text-xs text-purple-300 mt-0.5">
+            Preencha seus dados para conversarmos no WhatsApp
+          </p>
+        </div>
+        <button 
+          type="button" 
+          data-close-modal 
+          class="p-2 rounded-full text-purple-300 hover:text-white hover:bg-white/10 transition-colors"
+          aria-label="Fechar janela de solicitação"
+        >
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Passo 1: Formulário -->
+      <div id="modal-step-form" class="pt-6">
+        <form id="appointment-form" novalidate class="space-y-4">
+          
+          <div>
+            <label for="appointment-name" class="form-label">Nome completo *</label>
+            <input 
+              type="text" 
+              id="appointment-name" 
+              required 
+              placeholder="Como você gostaria de ser chamado(a)?"
+              class="form-input"
+            />
+            <span id="appointment-name-error" class="form-error hidden"></span>
+          </div>
+
+          <div>
+            <label for="appointment-phone" class="form-label">Telefone / WhatsApp *</label>
+            <input 
+              type="tel" 
+              id="appointment-phone" 
+              required 
+              placeholder="(11) 99999-9999"
+              class="form-input"
+            />
+            <span id="appointment-phone-error" class="form-error hidden"></span>
+          </div>
+
+          <div>
+            <label for="appointment-email" class="form-label">E-mail (opcional)</label>
+            <input 
+              type="email" 
+              id="appointment-email" 
+              placeholder="seuemail@exemplo.com"
+              class="form-input"
+            />
+            <span id="appointment-email-error" class="form-error hidden"></span>
+          </div>
+
+          <div>
+            <label for="appointment-therapy" class="form-label">Atendimento de interesse</label>
+            <select id="appointment-therapy" class="form-select">
+              <option value="">Ainda não sei / Gostaria de orientação</option>
+            </select>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label for="appointment-modality" class="form-label">Modalidade</label>
+              <select id="appointment-modality" class="form-select">
+                <option value="Online">Online (Videochamada)</option>
+                <option value="Presencial">Presencial</option>
+                <option value="A combinar" selected>A combinar</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="appointment-period" class="form-label">Período de preferência</label>
+              <select id="appointment-period" class="form-select">
+                <option value="Sem preferência de período" selected>Sem preferência</option>
+                <option value="Manhã (09h às 12h)">Manhã</option>
+                <option value="Tarde (13h às 18h)">Tarde</option>
+                <option value="Noite (após 18h)">Noite</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label for="appointment-date" class="form-label">Preferência de dia (opcional)</label>
+            <input 
+              type="date" 
+              id="appointment-date" 
+              class="form-input"
+            />
+            <p class="form-helper">
+              A preferência informada será considerada na solicitação. A confirmação do atendimento será realizada diretamente pela terapeuta.
+            </p>
+          </div>
+
+          <div>
+            <label for="appointment-message" class="form-label">Mensagem ou observação (opcional)</label>
+            <textarea 
+              id="appointment-message" 
+              rows="3" 
+              placeholder="Conte brevemente como podemos ajudar..."
+              class="form-textarea resize-none"
+            ></textarea>
+          </div>
+
+          <div class="pt-2">
+            <button 
+              type="submit" 
+              class="w-full py-3.5 px-4 rounded-full text-sm font-medium btn-cosmos-primary"
+            >
+              Revisar Solicitação
+            </button>
+          </div>
+
+        </form>
+      </div>
+
+      <!-- Passo 2: Resumo Cósmico -->
+      <div id="modal-step-summary" class="pt-6 hidden">
+        <div class="bg-[#180A26] p-5 rounded-2xl border border-pink-500/25 mb-6 text-sm space-y-3">
+          <h4 class="font-serif text-lg text-white border-b border-pink-500/20 pb-2">
+            Resumo da sua solicitação
+          </h4>
+
+          <div>
+            <span class="text-xs text-purple-300 uppercase tracking-wider block">Nome:</span>
+            <span id="summary-name" class="font-medium text-white"></span>
+          </div>
+
+          <div>
+            <span class="text-xs text-purple-300 uppercase tracking-wider block">Telefone / WhatsApp:</span>
+            <span id="summary-phone" class="font-medium text-white"></span>
+          </div>
+
+          <div id="summary-email-row" class="hidden">
+            <span class="text-xs text-purple-300 uppercase tracking-wider block">E-mail:</span>
+            <span id="summary-email" class="font-medium text-white"></span>
+          </div>
+
+          <div>
+            <span class="text-xs text-purple-300 uppercase tracking-wider block">Atendimento:</span>
+            <span id="summary-therapy" class="font-medium text-pink-300"></span>
+          </div>
+
+          <div class="grid grid-cols-2 gap-2">
+            <div>
+              <span class="text-xs text-purple-300 uppercase tracking-wider block">Modalidade:</span>
+              <span id="summary-modality" class="font-medium text-white"></span>
+            </div>
+            <div>
+              <span class="text-xs text-purple-300 uppercase tracking-wider block">Período:</span>
+              <span id="summary-period" class="font-medium text-white"></span>
+            </div>
+          </div>
+
+          <div>
+            <span class="text-xs text-purple-300 uppercase tracking-wider block">Data preferida:</span>
+            <span id="summary-date" class="font-medium text-white"></span>
+          </div>
+
+          <div id="summary-message-row" class="hidden">
+            <span class="text-xs text-purple-300 uppercase tracking-wider block">Mensagem:</span>
+            <span id="summary-message" class="text-purple-200 italic"></span>
+          </div>
+        </div>
+
+        <div class="p-4 bg-crimson-950/40 rounded-xl border border-crimson-500/30 text-xs text-purple-200 mb-6 font-light">
+          Ao clicar em continuar, você será direcionado(a) para o aplicativo do WhatsApp para conversar diretamente com Aureci Sena e verificar a disponibilidade de agenda.
+        </div>
+
+        <div class="grid grid-cols-2 gap-3">
+          <button 
+            type="button" 
+            id="summary-back-btn" 
+            class="w-full py-3 px-4 rounded-full text-xs sm:text-sm font-medium btn-cosmos-secondary"
+          >
+            Voltar e revisar
+          </button>
+          <button 
+            type="button" 
+            id="summary-confirm-btn" 
+            class="w-full py-3 px-4 rounded-full text-xs sm:text-sm font-medium bg-[#25D366] text-white hover:bg-[#20bd5a] transition-colors shadow-[0_0_20px_rgba(37,211,102,0.4)] inline-flex items-center justify-center gap-1.5"
+          >
+            <span>Ir para WhatsApp</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Passo 3: Sucesso -->
+      <div id="modal-step-success" class="pt-8 text-center hidden">
+        <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-crimson-900/40 border border-crimson-500/40 text-pink-300 flex items-center justify-center">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+          </svg>
+        </div>
+        <h4 class="font-serif text-2xl text-white mb-2">Solicitação Preparada!</h4>
+        <p class="text-purple-200 text-sm max-w-sm mx-auto mb-6 font-light">
+          A janela do WhatsApp foi aberta para você enviar os dados diretamente à terapeuta.
+        </p>
+        <div class="space-y-3">
+          <button 
+            type="button" 
+            onclick="WhatsAppService.openDirectChat()" 
+            class="w-full py-3 px-4 rounded-full text-sm font-medium btn-cosmos-primary"
+          >
+            Abrir WhatsApp Novamente
+          </button>
+          <button 
+            type="button" 
+            data-close-modal 
+            class="w-full py-2.5 px-4 rounded-full text-xs font-medium text-purple-300 hover:text-white"
+          >
+            Fechar Janela
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ============================================================
+       MODAL DE DETALHES DA PRÁTICA ("SAIBA MAIS")
+       ============================================================ -->
+  <div 
+    id="therapy-detail-modal" 
+    class="modal-overlay hidden" 
+    role="dialog" 
+    aria-modal="true" 
+    aria-labelledby="modal-therapy-name"
+  >
+    <div class="modal-content p-6 sm:p-8 max-w-2xl">
+      <div class="flex items-start justify-between pb-4 border-b border-pink-500/20">
+        <div>
+          <span id="modal-therapy-category" class="badge-category mb-2"></span>
+          <h3 id="modal-therapy-name" class="font-serif text-2xl sm:text-3xl text-white"></h3>
+        </div>
+        <button 
+          type="button" 
+          onclick="closeTherapyDetailModal()" 
+          class="modal-close-btn p-2 rounded-full text-purple-300 hover:text-white hover:bg-white/10 transition-colors"
+          aria-label="Fechar detalhes da prática"
+        >
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+
+      <div class="pt-6 space-y-6">
+        <div class="aspect-video w-full rounded-2xl overflow-hidden bg-[#0C0614] border border-pink-500/20">
+          <img id="modal-therapy-image" src="" alt="" class="w-full h-full object-cover"/>
+        </div>
+
+        <div>
+          <h4 class="font-serif text-lg text-white mb-1">Sobre a abordagem</h4>
+          <p id="modal-therapy-description" class="text-purple-200 text-sm leading-relaxed font-light"></p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 bg-[#180A26] p-5 rounded-2xl border border-pink-500/20">
+          <div>
+            <h5 class="font-medium text-xs text-crimson-400 uppercase tracking-wider mb-1">Objetivo da prática</h5>
+            <p id="modal-therapy-objective" class="text-purple-200 text-xs leading-relaxed font-light"></p>
+          </div>
+          <div>
+            <h5 class="font-medium text-xs text-crimson-400 uppercase tracking-wider mb-1">Como funciona a sessão</h5>
+            <p id="modal-therapy-how-it-works" class="text-purple-200 text-xs leading-relaxed font-light"></p>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between text-xs text-purple-300 pt-2 border-t border-purple-900/40">
+          <div><strong>Duração média:</strong> <span id="modal-therapy-duration" class="text-white"></span></div>
+          <div><strong>Modalidades:</strong> <span id="modal-therapy-modalities" class="text-white"></span></div>
+        </div>
+
+        <div class="pt-2">
+          <button 
+            type="button" 
+            id="modal-therapy-schedule-btn" 
+            class="w-full py-3.5 px-4 rounded-full text-sm font-medium btn-cosmos-primary"
+          >
+            Solicitar Atendimento desta Prática
+          </button>
+        </div>
       </div>
     </div>
   </div>
 
-  <!-- ── TOAST CONTAINER ────────────────────────────────────── -->
-  <div class="toast-container" id="toast-container"></div>
+  <!-- Botão Flutuante de WhatsApp -->
+  <button 
+    type="button" 
+    onclick="WhatsAppService.openDirectChat('Olá, Aureci! Gostaria de tirar dúvidas sobre os atendimentos.')"
+    class="floating-whatsapp"
+    aria-label="Conversar com Aureci Sena pelo WhatsApp"
+  >
+    <svg class="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
+    </svg>
+    <span>Falar no WhatsApp</span>
+  </button>
 
-  <!-- ── BACK TO TOP ────────────────────────────────────────── -->
-  <button id="back-to-top" aria-label="Voltar ao topo da página">↑</button>
+  <!-- Botão Voltar ao Topo -->
+  <button 
+    id="back-to-top" 
+    type="button" 
+    class="back-to-top-btn opacity-0 pointer-events-none translate-y-4"
+    aria-label="Voltar ao início da página"
+  >
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
+    </svg>
+  </button>
 
-  <!-- ── SCRIPTS ────────────────────────────────────────────── -->
+  <!-- ============================================================
+       SCRIPTS DA APLICAÇÃO
+       ============================================================ -->
   <script src="js/config.js"></script>
-  <script src="js/services-data.js"></script>
+  <script src="js/therapies.js"></script>
   <script src="js/whatsapp.js"></script>
-  <script src="js/cart.js"></script>
-  <script src="js/checkout.js"></script>
+  <script src="js/appointment.js"></script>
   <script src="js/main.js"></script>
-</body>
 
+  <!-- Inicialização dos Atendimentos em Destaque na Home -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const container = document.getElementById("home-therapies-container");
+      if (container && typeof therapiesData !== "undefined") {
+        const featured = therapiesData.filter(t => t.active && t.confirmedByTherapist).slice(0, 3);
+        container.innerHTML = featured.map(therapy => `
+          <article class="therapy-card group flex flex-col h-full transform hover:-translate-y-1">
+            <div class="relative h-56 w-full overflow-hidden rounded-t-[1.7rem] bg-[#0C0614]">
+              <img 
+                src="${therapy.image}" 
+                alt="${therapy.name}" 
+                loading="lazy" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out opacity-85"
+                onerror="this.src='assets/images/bg-universe.jpg'"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#0C0614] via-[#0C0614]/40 to-transparent"></div>
+              <span class="absolute top-4 left-4 badge-category backdrop-blur-md shadow-sm">
+                ${therapy.categoryName}
+              </span>
+              <div class="absolute top-4 right-4 w-10 h-10 rounded-full bg-[#13071E]/90 border border-pink-500/40 p-1.5 shadow-[0_0_15px_rgba(209,40,69,0.35)] backdrop-blur-md">
+                <img src="${therapy.icon || 'assets/icons/icon-reiki.svg'}" alt="" class="w-full h-full object-contain" />
+              </div>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <h3 class="font-serif text-2xl text-white group-hover:text-pink-300 transition-colors mb-2">
+                ${therapy.name}
+              </h3>
+              <p class="text-purple-200 text-sm leading-relaxed mb-6 flex-grow font-light">
+                ${therapy.shortDescription}
+              </p>
+              <div class="grid grid-cols-2 gap-3 pt-3 border-t border-purple-900/40">
+                <button 
+                  type="button" 
+                  onclick="openTherapyDetailModal(${therapy.id})" 
+                  class="w-full py-2.5 px-3 rounded-full text-xs font-medium btn-cosmos-secondary text-center"
+                >
+                  Saiba mais
+                </button>
+                <button 
+                  type="button" 
+                  onclick="handleRequestSession('${therapy.name.replace(/'/g, "\\'")}', '${(therapy.modalities && therapy.modalities[0]) || 'A combinar'}')" 
+                  class="w-full py-2.5 px-3 rounded-full text-xs font-medium btn-cosmos-primary text-center"
+                >
+                  Agendar
+                </button>
+              </div>
+            </div>
+          </article>
+        `).join("");
+      }
+    });
+  </script>
+
+</body>
 </html>

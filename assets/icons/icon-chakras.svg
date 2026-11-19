@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <!-- Eixo Central de Luz -->
+  <line x1="24" y1="6" x2="24" y2="42" stroke="url(#chakra-axis)" stroke-width="1.5" stroke-dasharray="2 2"/>
+  <!-- 7 Centros de Energia / Chakras -->
+  <circle cx="24" cy="7" r="3.5" fill="#E0B0FF" stroke="#FFFFFF" stroke-width="1"/> <!-- Coronário -->
+  <circle cx="24" cy="13" r="3" fill="#8E24AA" stroke="#E0B0FF" stroke-width="0.8"/> <!-- Frontal -->
+  <circle cx="24" cy="19" r="3" fill="#4A90E2" stroke="#B0E0E6" stroke-width="0.8"/> <!-- Laríngeo -->
+  <circle cx="24" cy="25" r="3.5" fill="#50E3C2" stroke="#FFFFFF" stroke-width="1"/> <!-- Cardíaco -->
+  <circle cx="24" cy="31" r="3" fill="#F5A623" stroke="#FFE4B5" stroke-width="0.8"/> <!-- Plexo Solar -->
+  <circle cx="24" cy="36" r="3" fill="#FF7597" stroke="#FFD1DC" stroke-width="0.8"/> <!-- Sacro -->
+  <circle cx="24" cy="41" r="3.5" fill="#D12845" stroke="#FFFFFF" stroke-width="1"/> <!-- Básico -->
+  <!-- Auréola Cósmica ao Redor do Cardíaco e Coronário -->
+  <ellipse cx="24" cy="25" rx="14" ry="4" stroke="#FF7597" stroke-width="1" stroke-opacity="0.6"/>
+  <defs>
+    <linearGradient id="chakra-axis" x1="24" y1="6" x2="24" y2="42" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E0B0FF"/>
+      <stop offset="0.5" stop-color="#FF7597"/>
+      <stop offset="1" stop-color="#D12845"/>
+    </linearGradient>
+  </defs>
+</svg>
